@@ -9,8 +9,10 @@ History of the choice.  The development AUROCs of the four models had already be
 MapLight-style CatBoost 0.8297, TabPFN on descriptors 0.8246, random forest 0.7190).  The author fixed the rule and the candidate set on 9 October 2026,
 after the cohort results and that development table of the second analysis were known.  The candidates are the four models that exist outside the combined
 model of the first and second analyses; three members of that combined model (development means 0.8398, 0.8370 and 0.8346) and the combined model itself
-(0.8371) had higher development means than Chemprop (0.8337).  Chemprop also had the highest cohort AUROC of the four candidates (0.869) and of all
-stand-alone models of the second analysis (next 0.863).  This script and the analysis code were written for Chemprop after the cohort results were known:
+(0.8371) had higher development means than Chemprop (0.8337).  In the second analysis Chemprop also had the highest cohort AUROC of the four candidates (0.869) and of the
+seven members of the combined model (next 0.863); in the first analysis it ranked below the MapLight-style CatBoost (0.844 against 0.863) and TabPFN on descriptors (0.852).
+The rule is applied to the five-seed means (the scores of every table); applied to the five single seeds it selects the MapLight-style CatBoost, Chemprop, TabPFN on
+descriptors, the MapLight-style CatBoost and the MapLight-style CatBoost (Chemprop once in five; Supplement 3D of the manuscript).  This script and the analysis code were written for Chemprop after the cohort results were known:
 it stops if the rule selects another model.  It recomputes the development AUROCs from the prediction files of the Ambe set and the non-herbal set and
 never opens a herb prediction file or herb.csv (a test confirms it); 50 of the 351 Ambe compounds are also cohort ingredients with identical labels, and
 without them Chemprop still leads (0.8312 against 0.8279 for MapLight-style CatBoost).  In the non-herbal development set the combined model exceeded Chemprop in

@@ -1,7 +1,7 @@
 """Shared helpers of the single-model analysis (Chemprop as the primary model).
 
 The analysis re-summarizes the prediction files of the second analysis (ROOT/arch_v4/results/<model>/seed{k}_{set}.csv.gz) for the four stand-alone
-models Chemprop, MapLight-style CatBoost, TabPFN on descriptors and the random forest, plus the two descriptor baselines (heavy-atom count, Crippen
+models Chemprop, MapLight-style CatBoost, TabPFN on descriptors and the random forest, plus the two reference scores (heavy-atom count, Crippen
 logP).  Nothing is trained or tuned here, and nothing under ROOT/arch_v4, ROOT/arch_v5 or ROOT/analysis_v3 is written.
 
 Design (unchanged from the second analysis): cohort = HERB ingredients up to 500 Da, paired scaffold-cluster bootstrap with 2,000 draws (seed 2026,

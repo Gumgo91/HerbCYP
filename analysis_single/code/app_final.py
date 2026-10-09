@@ -1,4 +1,4 @@
-"""Application outputs with Chemprop: testing budgets, risk tiers, ranked list of unmeasured ingredients, herb shortlists.
+"""Application outputs with Chemprop: testing budgets, score tiers, ranked list of unmeasured ingredients, herb shortlists.
 
 python code/app_final.py [--out results/final/app]
 
@@ -9,6 +9,9 @@ in-sample).  Two columns are new relative to the second analysis' ranked table: 
 with an ingredient of the evaluation cohort or of the Ambe set) and the score is the Chemprop probability.  The similarity (maxsim_train) and the
 applicability class are recomputed from the training rows (union of the five training sets, similarity.py).  From analysis_v3/results only the
 split-independent annotations are read (chemotype, methylenedioxyphenyl, sugar, methoxy count; herb names).
+The column name of the ranked table is the HERB name with every character outside the printable ASCII range removed (clean_name): 977 of the 15,511 names lose
+characters (Greek letters, plus-minus signs, primes), so a name must not be used to identify a compound; arch_v4/bundle/unmeasured.csv (inputs/unmeasured.csv of the
+data package) holds the names as recorded in HERB, and make_data_package.py states the count in README.txt after computing it.
 """
 from __future__ import annotations
 

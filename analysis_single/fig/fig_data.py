@@ -4,6 +4,11 @@ The panels show data facts (HERB universe, assay evidence, training pool, covera
 depend on the split or on the model.  Coverage counts are read from results/final/coverage_by_mw.csv of the single-model analysis (the
 model-independent columns equal those of the second analysis); cohort and pool counts are read from the bundle; HERB-universe counts
 are checked against analysis_v3/results/numbers.json.  Numbers are unchanged from the earlier figure and are re-read from the files here.
+Panel c plots the coordinates of analysis_v3/results/a5_embedding.csv (inputs/analysis_v3_results/a5_embedding.csv of the data package), which a script of the
+descriptive stage (a5_landscape.py, not part of the package) wrote once: a random sample of 4,000 training-pool structures and one of 7,000 unmeasured HERB structures
+(seed 2026) and all 1,036 measured HERB structures, each described by 200 normalized RDKit 2D descriptors (the structures without a complete descriptor vector were
+dropped: 3,983, 6,995 and 1,036 remain), standardized over these structures, clipped at +-6 SD, reduced to 40 principal components (seed 2026) and embedded by
+t-SNE (perplexity 60, PCA initialization, seed 2026).  README.txt of the data package gives the same description.
 """
 from __future__ import annotations
 

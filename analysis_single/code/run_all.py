@@ -7,6 +7,8 @@ Primary model: Chemprop (rule in select_primary.py, development data only).  Com
 of the second analysis.  Same analyses, estimates and paired intervals as arch_v4/analysis/run_all.py with Chemprop as the primary model:
 the paired differences are Chemprop minus the comparator or reference score (2,000 scaffold-cluster draws, seed 2026, ring-free structures form one cluster).
 Cohort labels enter only through the evaluation functions of stats_v3.py (estimates, intervals, stratified AUROC) and the recovery curves.
+Every score is the mean of the five seed models (an ensemble), so every AUROC is the AUROC of a five-seed mean; the seed-to-seed variation of single seeds is not summarized here
+(Supplement 3D of the manuscript quantifies it from the prediction files).
 
 Writes estimates.csv, paired.csv, herb_recovery_curves.csv, herb_scores_all_models.csv and dev_single_models.csv.
 """
@@ -53,7 +55,7 @@ def main():
         panel(herb[herb.mw > 300], "herb_mw_300_500", est_all, pair_all, SUBSET_MODELS)
         panel(herb[herb.np >= 0], "herb_np_ge0", est_all, pair_all, SUBSET_MODELS)
         panel(herb[herb.np < 0], "herb_np_lt0", est_all, pair_all, SUBSET_MODELS)
-        # recovery curves of all rankers
+        # recovery curves of all scores
         rows = []
         for m in ALL_MODELS:
             rank = np.lexsort((herb.smiles.to_numpy(str), -herb[m].to_numpy(float)))
