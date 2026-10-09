@@ -1,0 +1,136 @@
+{
+ "algorithm": "make_splits.py (random group assignment, best of 5000 trials per seed)",
+ "ratios": [
+  0.7,
+  0.15,
+  0.15
+ ],
+ "acyclic_similarity": 0.5,
+ "seeds": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "n_groups": 5933,
+ "pool_sha256": "3e1f223e939f3e48c75cd2b7d2a5fada5df4d9bdf082eee607673e0fc32884dc",
+ "report": {
+  "1": {
+   "train": {
+    "n": 6808,
+    "ring_free": 172,
+    "positives": 2923,
+    "prevalence": 0.429,
+    "gt500": 438
+   },
+   "selection": {
+    "n": 1459,
+    "ring_free": 45,
+    "positives": 466,
+    "prevalence": 0.319,
+    "gt500": 54
+   },
+   "calibration": {
+    "n": 1459,
+    "ring_free": 47,
+    "positives": 615,
+    "prevalence": 0.422,
+    "gt500": 69
+   }
+  },
+  "2": {
+   "train": {
+    "n": 6808,
+    "ring_free": 196,
+    "positives": 2928,
+    "prevalence": 0.43,
+    "gt500": 416
+   },
+   "selection": {
+    "n": 1459,
+    "ring_free": 28,
+    "positives": 446,
+    "prevalence": 0.306,
+    "gt500": 62
+   },
+   "calibration": {
+    "n": 1459,
+    "ring_free": 40,
+    "positives": 630,
+    "prevalence": 0.432,
+    "gt500": 83
+   }
+  },
+  "3": {
+   "train": {
+    "n": 6808,
+    "ring_free": 192,
+    "positives": 2774,
+    "prevalence": 0.407,
+    "gt500": 401
+   },
+   "selection": {
+    "n": 1459,
+    "ring_free": 43,
+    "positives": 594,
+    "prevalence": 0.407,
+    "gt500": 72
+   },
+   "calibration": {
+    "n": 1459,
+    "ring_free": 29,
+    "positives": 636,
+    "prevalence": 0.436,
+    "gt500": 88
+   }
+  },
+  "4": {
+   "train": {
+    "n": 6809,
+    "ring_free": 159,
+    "positives": 2751,
+    "prevalence": 0.404,
+    "gt500": 404
+   },
+   "selection": {
+    "n": 1459,
+    "ring_free": 60,
+    "positives": 616,
+    "prevalence": 0.422,
+    "gt500": 61
+   },
+   "calibration": {
+    "n": 1458,
+    "ring_free": 45,
+    "positives": 637,
+    "prevalence": 0.437,
+    "gt500": 96
+   }
+  },
+  "5": {
+   "train": {
+    "n": 6808,
+    "ring_free": 183,
+    "positives": 2856,
+    "prevalence": 0.42,
+    "gt500": 375
+   },
+   "selection": {
+    "n": 1459,
+    "ring_free": 56,
+    "positives": 572,
+    "prevalence": 0.392,
+    "gt500": 90
+   },
+   "calibration": {
+    "n": 1459,
+    "ring_free": 25,
+    "positives": 576,
+    "prevalence": 0.395,
+    "gt500": 96
+   }
+  }
+ },
+ "same_role_all_seeds": 1627
+}

@@ -1,0 +1,1037 @@
+canonical_smiles,chemotype,mdp,n_ome,has_sugar
+BrCCCCCCBr,Acyclic aliphatic,False,0,False
+BrCc1ccccc1,Other aromatic,False,0,False
+C1C2CC3CC1CC(C2)C3,Terpenoid,False,0,False
+C1C2OC2C2C1C1CC2C2OC12,Terpenoid,False,0,False
+C1CC2OC2CC1C1CO1,Terpenoid,False,0,False
+C1CCC(C2CCCCC2)CC1,Terpenoid,False,0,False
+C1CCCCC1,Other,False,0,False
+C1CCCCCCCCCCC1,Terpenoid,False,0,False
+C1CCNCC1,Other,False,0,False
+C1CNCCN1,Other,False,0,False
+C1COCO1,Other,False,0,False
+C=C(C)C(=O)O,Other,False,0,False
+C=C(C)C(=O)OCC1CO1,Terpenoid,False,0,False
+C=C(C)C(=O)OCCCCCC,Acyclic aliphatic,False,0,False
+C=C(C)C(=O)OCCCCCCCCCC,Acyclic aliphatic,False,0,False
+C=C(C)C(=O)OCCCCCCCCCCCC,Acyclic aliphatic,False,0,False
+C=C(C)C1CC=C(C)C(=O)C1,Terpenoid,False,0,False
+C=C(C)C1CC=C(C)C(O)C1,Terpenoid,False,0,False
+C=C(C)C1CC=C(C)C(OC(C)=O)C1,Terpenoid,False,0,False
+C=C(C)C1CC=C(C)CC1,Terpenoid,False,0,False
+C=C(C)C1CC=C(CO)CC1,Terpenoid,False,0,False
+C=C(C)C1CCC(C)(O)CC1,Terpenoid,False,0,False
+C=C(C)C1CCC(C)CC1O,Terpenoid,False,0,False
+C=C(C)C1CNC(C(=O)O)C1CC(=O)O,Other,False,0,False
+C=C(C)C1COc2cc3oc(=O)ccc3cc2O1,Coumarin,False,0,False
+C=C(C)C1Cc2c(ccc3c2OC2COc4cc(OC)c(OC)cc4C2C3=O)O1,Flavonoid,False,2,False
+C=C(C)CC(C)(C)C,Acyclic aliphatic,False,0,False
+C=C(C)CCCC(C)CCO,Acyclic aliphatic,False,0,False
+C=C(C)CCO,Other,False,0,False
+C=C(C)c1cc2cc(C(C)=O)c(O)cc2o1,Other aromatic,False,0,False
+C=C1C2CCC(C2)C1(C)C,Terpenoid,False,0,False
+C=C1CCC2C(CC2(C)C)C(=O)CCC1O,Terpenoid,False,0,False
+C=C1CCC2CC1C2(C)C,Terpenoid,False,0,False
+C=CC(=C)CCC=C(C)CCC=C(C)C=O,Acyclic aliphatic,False,0,False
+C=CC(=O)CC,Other,False,0,False
+C=CC(=O)CCCCC,Acyclic aliphatic,False,0,False
+C=CC(=O)OCCCC,Acyclic aliphatic,False,0,False
+C=CC(=O)OCCO,Acyclic aliphatic,False,0,False
+C=CC(C)(C)O,Other,False,0,False
+C=CC(C)(CCC=C(C)C)OC(=O)C(C)C,Acyclic aliphatic,False,0,False
+C=CC(C)(CCC=C(C)C)OC(=O)CC,Acyclic aliphatic,False,0,False
+C=CC(C)(CCC=C(C)C)OC(=O)c1ccccc1,Other aromatic,False,0,False
+C=CC(C)(CCC=C(C)C)OC(=O)c1ccccc1N,Other aromatic,False,0,False
+C=CC(C)(CCC=C(C)C)OC=O,Acyclic aliphatic,False,0,False
+C=CC(C)(O)CCC=C(C)CCC=C(C)C,Acyclic aliphatic,False,0,False
+C=CC(C)=CCC=C(C)C,Acyclic aliphatic,False,0,False
+C=CC(C)=O,Other,False,0,False
+C=CC(C)CCC=C(C)C,Acyclic aliphatic,False,0,False
+C=CC(C1=CC(=O)C(OC)=CC1=O)c1ccccc1,Other aromatic,False,0,False
+C=CC(O)CCCCC,Acyclic aliphatic,False,0,False
+C=CC1CN2CCC1CC2C(O)c1ccnc2ccc(OC)cc12,Other alkaloid,False,1,False
+C=CC=CC=CCCCCC,Acyclic aliphatic,False,0,False
+C=CC=O,Other,False,0,False
+C=CCCC,Other,False,0,False
+C=CCCC=C,Other,False,0,False
+C=CCCCC,Other,False,0,False
+C=CCCCCCC,Acyclic aliphatic,False,0,False
+C=CCCCCCCC=C,Acyclic aliphatic,False,0,False
+C=CCCCCCCCC,Acyclic aliphatic,False,0,False
+C=CCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+C=CCCCCCCCCC=O,Acyclic aliphatic,False,0,False
+C=CCCCCCCCCCC,Acyclic aliphatic,False,0,False
+C=CCCCCCCCCCCC,Acyclic aliphatic,False,0,False
+C=CCCCCCCCCCCCC,Acyclic aliphatic,False,0,False
+C=CCCCCCCCCCCCC(O)CC(O)COC(C)=O,Acyclic aliphatic,False,0,False
+C=CCCCCCCCCCCCCCC,Acyclic aliphatic,False,0,False
+C=CCCCCCCCCCCCCCCCC,Acyclic aliphatic,False,0,False
+C=CCN=C=S,Other,False,0,False
+C=CCOC(=O)CCCCCC,Acyclic aliphatic,False,0,False
+C=CCOC(C)=O,Other,False,0,False
+C=CCSCC(N)C(=O)O,Acyclic aliphatic,False,0,False
+C=CCSCC=C,Other,False,0,False
+C=CCSSCC=C,Acyclic aliphatic,False,0,False
+C=CCSSCCC,Acyclic aliphatic,False,0,False
+C=CCc1cc(OC)c2c(c1)OCO2,Other aromatic,True,1,False
+C=CCc1cc(OC)c2c(c1OC)OCO2,Other aromatic,True,2,False
+C=CCc1ccc(OC)cc1,Other aromatic,False,1,False
+C=CCc1ccc2c(c1)OCO2,Other aromatic,True,0,False
+C=CCc1ccccc1,Other aromatic,False,0,False
+C=CCc1ccccc1O,Other aromatic,False,0,False
+C=COCCCC,Other,False,0,False
+C=Cc1ccc(O)c(OC)c1,Other aromatic,False,1,False
+C=Cc1ccccc1,Other aromatic,False,0,False
+C=O,Other,False,0,False
+CC(=O)C(=O)O,Other,False,0,False
+CC(=O)C(C)=O,Other,False,0,False
+CC(=O)C(C)C,Other,False,0,False
+CC(=O)C(C)O,Other,False,0,False
+CC(=O)C=C(C)C,Other,False,0,False
+CC(=O)C=CC1=C(C)CCCC1(C)C,Terpenoid,False,0,False
+CC(=O)C=CC1C(C)=CCC(C)C1(C)C,Terpenoid,False,0,False
+CC(=O)C=Cc1ccco1,Other aromatic,False,0,False
+CC(=O)C=O,Other,False,0,False
+CC(=O)CC(C)(C)O,Acyclic aliphatic,False,0,False
+CC(=O)CC(C)C,Other,False,0,False
+CC(=O)CC(c1ccccc1)c1c(O)c2ccccc2oc1=O,Coumarin,False,0,False
+CC(=O)CC1CCCCN1,Other,False,0,False
+CC(=O)CCC(=O)O,Acyclic aliphatic,False,0,False
+CC(=O)CCC(C)C,Acyclic aliphatic,False,0,False
+CC(=O)CCC=C(C)C,Acyclic aliphatic,False,0,False
+CC(=O)CCc1ccc(O)cc1,Other aromatic,False,0,False
+CC(=O)CCc1ccc(OC(C)=O)cc1,Other aromatic,False,0,False
+CC(=O)CCc1ccccc1,Other aromatic,False,0,False
+CC(=O)NC(CCC(=O)O)C(=O)O,Acyclic aliphatic,False,0,False
+CC(=O)NNc1ccccc1,Other aromatic,False,0,False
+CC(=O)Nc1cccc(O)c1,Other aromatic,False,0,False
+CC(=O)O,Other,False,0,False
+CC(=O)OC(C)(C)C1Cc2cc3ccc(=O)oc3cc2O1,Coumarin,False,0,False
+CC(=O)OC(C)=O,Other,False,0,False
+CC(=O)OC(C)C,Other,False,0,False
+CC(=O)OC(C)c1ccccc1,Other aromatic,False,0,False
+CC(=O)OC1C2(C)CCC(C2)C1(C)C,Terpenoid,False,0,False
+CC(=O)OC1CC2CCC1(C)C2(C)C,Terpenoid,False,0,False
+CC(=O)OC1c2c(ccc3ccc(=O)oc23)OC(C)(C)C1OC(=O)CC(C)C,Coumarin,False,0,False
+CC(=O)OCC(COC(C)=O)OC(C)=O,Acyclic aliphatic,False,0,False
+CC(=O)OCC=C(C)CCC=C(C)CCC=C(C)C,Acyclic aliphatic,False,0,False
+CC(=O)OCCC(C)C,Acyclic aliphatic,False,0,False
+CC(=O)OCCC(C)CCC=C(C)C,Acyclic aliphatic,False,0,False
+CC(=O)OCC[N+](C)(C)C,Acyclic aliphatic,False,0,False
+CC(=O)OCCc1ccccc1,Other aromatic,False,0,False
+CC(=O)OCc1ccccc1,Other aromatic,False,0,False
+CC(=O)OCc1ccco1,Other aromatic,False,0,False
+CC(=O)Oc1cc(OC(C)=O)c2c(c1)OC(c1ccc(OC(C)=O)c(OC(C)=O)c1)C(OC(C)=O)C2,Flavonoid,False,0,False
+CC(=O)c1c(O)cc(O)cc1O,Other aromatic,False,0,False
+CC(=O)c1ccc(O)cc1,Other aromatic,False,0,False
+CC(=O)c1ccc[nH]1,Other aromatic,False,0,False
+CC(=O)c1ccccc1O,Other aromatic,False,0,False
+CC(C(O)c1ccc(O)cc1)N1CCC(Cc2ccccc2)CC1,Other alkaloid,False,0,False
+CC(C)(C)C1=CC(=O)C=C(C(C)(C)C)C1=O,Terpenoid,False,0,False
+CC(C)(C)NC(N)=O,Acyclic aliphatic,False,0,False
+CC(C)(C)c1cc(C=O)cc(C(C)(C)C)c1O,Other aromatic,False,0,False
+CC(C)(C)c1ccc(N)cc1,Other aromatic,False,0,False
+CC(C)(C)c1ccc(O)c(C(C)(C)C)c1,Other aromatic,False,0,False
+CC(C)(C)c1ccc(O)c(O)c1,Other aromatic,False,0,False
+CC(C)(C)c1ccc(O)cc1,Other aromatic,False,0,False
+CC(C)(C)c1cccc(C(C)(C)C)c1O,Other aromatic,False,0,False
+CC(C)(C)c1ccccc1,Other aromatic,False,0,False
+CC(C)(CO)CO,Other,False,0,False
+CC(C)(O)C#N,Other,False,0,False
+CC(C)(O)Cc1ccccc1,Other aromatic,False,0,False
+CC(C)(O)c1ccccc1,Other aromatic,False,0,False
+CC(C)=C1CCC(C)CC1=O,Terpenoid,False,0,False
+CC(C)=CC(=O)C=C(C)C,Acyclic aliphatic,False,0,False
+CC(C)=CC(=O)O,Other,False,0,False
+CC(C)=CC1C(C(=O)O)C1(C)C,Terpenoid,False,0,False
+CC(C)=CC1C(CO)C1(C)C,Terpenoid,False,0,False
+CC(C)=CC1CC(C)CCO1,Terpenoid,False,0,False
+CC(C)=CC=O,Other,False,0,False
+CC(C)=CCC1=C(O)c2ccccc2C(=O)C1=O,Other aromatic,False,0,False
+CC(C)=CCCC(C)(OC1OC(COC2OC(CO)C(O)C2O)C(O)C(O)C1O)C1CCC2(C)C1C(O)CC1C3(C)CCC(OC4OC(CO)C(O)C(O)C4OC4OC(CO)C(O)C(O)C4O)C(C)(C)C3CCC12C,Glycoside,False,0,True
+CC(C)=CCCC(C)=CC#N,Acyclic aliphatic,False,0,False
+CC(C)=CCCC(C)=CC=O,Acyclic aliphatic,False,0,False
+CC(C)=CCCC(C)=CCCC(C)=CCCC=C(C)CCC=C(C)CCC=C(C)C,Acyclic aliphatic,False,0,False
+CC(C)=CCCC(C)=CCCC(C)=CCO,Acyclic aliphatic,False,0,False
+CC(C)=CCCC(C)C=O,Acyclic aliphatic,False,0,False
+CC(C)=CCCC(C)CC(=O)O,Acyclic aliphatic,False,0,False
+CC(C)=CCCC(C)CC=O,Acyclic aliphatic,False,0,False
+CC(C)=CCCC(C)CCOC(=O)C(C)C,Acyclic aliphatic,False,0,False
+CC(C)=CCCC(C)CCOC=O,Acyclic aliphatic,False,0,False
+CC(C)=CCCC(C)O,Acyclic aliphatic,False,0,False
+CC(C)=CCO,Other,False,0,False
+CC(C)=CCOc1c2occc2cc2ccc(=O)oc12,Furanocoumarin,False,0,False
+CC(C)=O,Other,False,0,False
+CC(C)C(=O)Cl,Other,False,0,False
+CC(C)C(=O)O,Other,False,0,False
+CC(C)C(=O)OCCc1ccccc1,Other aromatic,False,0,False
+CC(C)C(=O)c1ccccc1,Other aromatic,False,0,False
+CC(C)CC(=O)O,Other,False,0,False
+CC(C)CC(=O)OCc1ccccc1,Other aromatic,False,0,False
+CC(C)CC=O,Other,False,0,False
+CC(C)CCCC(C)C1CCC2C3CC=C4CC(O)CCC4(C)C3CCC12C,Polycyclic terpenoid or steroid,False,0,False
+CC(C)CCCC(C)CCCC(C)CCCCC(C)CCCC(C)CCCC(C)C,Acyclic aliphatic,False,0,False
+CC(C)CCCC(C)CCO,Acyclic aliphatic,False,0,False
+CC(C)CCCCCCCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CC(C)CCCCCOC(=O)CCCCC(=O)OCCCCCC(C)C,Acyclic aliphatic,False,0,False
+CC(C)CCCCCOC(=O)COc1ccc(Cl)cc1Cl,Other aromatic,False,0,False
+CC(C)CCCCCOC(=O)c1ccccc1C(=O)OCCCCCC(C)C,Phthalate,False,0,False
+CC(C)CCCO,Other,False,0,False
+CC(C)CCO,Other,False,0,False
+CC(C)CCOC(=O)CC(C)C,Acyclic aliphatic,False,0,False
+CC(C)CCOC(=O)c1ccccc1,Other aromatic,False,0,False
+CC(C)CCON=O,Acyclic aliphatic,False,0,False
+CC(C)CO,Other,False,0,False
+CC(C)COC(=O)CCCCC(=O)OCC(C)C,Acyclic aliphatic,False,0,False
+CC(C)COC(=O)c1ccccc1,Other aromatic,False,0,False
+CC(C)COC(=O)c1ccccc1C(=O)OCC(C)C,Phthalate,False,0,False
+CC(C)CON=O,Other,False,0,False
+CC(C)NCC(O)COc1ccc(CC(N)=O)cc1,Other aromatic,False,0,False
+CC(C)NCC(O)COc1cccc2ccccc12,Other alkaloid,False,0,False
+CC(C)NCC(O)c1ccccc1Cl,Other aromatic,False,0,False
+CC(C)O,Other,False,0,False
+CC(C)OC=O,Other,False,0,False
+CC(C)OCCO,Other,False,0,False
+CC(C)S,Other,False,0,False
+CC(C)c1cc(C(C)C)cc(C(C)C)c1,Other aromatic,False,0,False
+CC(C)c1ccc(C=O)cc1,Other aromatic,False,0,False
+CC(C)c1ccc(CO)cc1,Other aromatic,False,0,False
+CC(C)c1cccc(C(C)C)c1,Other aromatic,False,0,False
+CC(C)c1ccccc1,Other aromatic,False,0,False
+CC(CC=O)c1ccccc1,Other aromatic,False,0,False
+CC(CCO)CC(C)(C)C,Acyclic aliphatic,False,0,False
+CC(CO)c1ccccc1,Other aromatic,False,0,False
+CC(Cc1ccc(O)c(O)c1)C(C)Cc1ccc(O)c(O)c1,Other aromatic,False,0,False
+CC(NC(C)(C)C)C(=O)c1cccc(Cl)c1,Other aromatic,False,0,False
+CC(O)C#N,Other,False,0,False
+CC(O)C(=O)O,Other,False,0,False
+CC(O)C(C)O,Other,False,0,False
+CC(O)CC(C)O,Other,False,0,False
+CC(O)CCO,Other,False,0,False
+CC(O)CN,Other,False,0,False
+CC(O)c1ccccc1,Other aromatic,False,0,False
+CC1(C)C(C=C(Cl)Cl)C1C(=O)OCc1cccc(Oc2ccccc2)c1,Other aromatic,False,0,False
+CC1(C)C2CCC1(C)C(O)C2,Terpenoid,False,0,False
+CC1(C)C=Cc2cc3ccc(=O)oc3cc2O1,Coumarin,False,0,False
+CC1(C)CC(=O)CC(C)(C)N1,Other,False,0,False
+CC1(C)Oc2ccc3ccc(=O)oc3c2CC1O,Coumarin,False,0,False
+CC12C(=O)OC(=O)C1(C)C1CCC2O1,Terpenoid,False,0,False
+CC12CC3(O)OC(O1)C1(COC(=O)c4ccc(O)cc4)C3CC21OC1OC(CO)C(O)C(O)C1O,Glycoside,False,0,True
+CC12CCC(C(=O)C1=O)C2(C)C,Terpenoid,False,0,False
+CC12CCC(C1)C(C)(C)C2O,Terpenoid,False,0,False
+CC12CCC(CC1)C(C)(C)O2,Terpenoid,False,0,False
+CC12CCC(CC1=O)C2(C)C,Terpenoid,False,0,False
+CC12CCC3c4ccc(O)cc4CCC3C1CCC2=O,Polycyclic terpenoid or steroid,False,0,False
+CC12CCCC(O)(C1)C1CC(C)(C)C1CC2,Terpenoid,False,0,False
+CC1=C(C=O)C(C)(C)CC=C1,Terpenoid,False,0,False
+CC1=C(C=O)C(C)(C)CCC1,Terpenoid,False,0,False
+CC1=C(CC=O)C(C)(C)CCC1,Terpenoid,False,0,False
+CC1=C(CCC(=O)O)c2cc3nc(cc4[nH]c(cc5[nH]c(cc1n2)c(C)c5C(C)O)c(C)c4C(C)O)C(C)=C3CCC(=O)O,Other alkaloid,False,0,False
+CC1=CC(=O)C2=C(C)CCC3C(C)C(=O)OC3C12,Terpenoid,False,0,False
+CC1=CC(=O)CC(C)(C)C1,Terpenoid,False,0,False
+CC1=CC(=O)CC(C)(C)C1=O,Terpenoid,False,0,False
+CC1=CC(=O)c2c(O)cccc2C1=O,Other aromatic,False,0,False
+CC1=CC(C)C(C)C(C=O)C1,Terpenoid,False,0,False
+CC1=CC2C(C(C)C)CCC(C)(O)C2CC1,Terpenoid,False,0,False
+CC1=CC=C(C(C)C)CC1,Terpenoid,False,0,False
+CC1=CCC(=C(C)C)CC1,Terpenoid,False,0,False
+CC1=CCC(=O)O1,Other,False,0,False
+CC1=CCC(C(C)(C)O)CC1,Terpenoid,False,0,False
+CC1=CCC(C(C)C)=CC1,Terpenoid,False,0,False
+CC1=CCC(C(C)C)C=C1,Terpenoid,False,0,False
+CC1=CCC2C(C1)C2(C)C,Terpenoid,False,0,False
+CC1=CCC2CC1C2(C)C,Terpenoid,False,0,False
+CC1C(=O)OC2CC34C5CC(C(C)(C)C)C36C(OC(=O)C6O)OC4(C(=O)O5)C21O,Polycyclic terpenoid or steroid,False,0,False
+CC1CCC(=O)C1=O,Other,False,0,False
+CC1CCC(=O)CC1,Other,False,0,False
+CC1CCC(C(C)(C)O)CC2=C1CCC2C,Terpenoid,False,0,False
+CC1CCC(C(C)C)C(=O)C1,Terpenoid,False,0,False
+CC1CCC(C(C)C)C(O)C1,Terpenoid,False,0,False
+CC1CCC2C(C)C(=O)OC3OC4(C)CCC1C32OO4,Polycyclic terpenoid or steroid,False,0,False
+CC1CCCCC1,Other,False,0,False
+CC1NCCOC1c1ccccc1,Other alkaloid,False,0,False
+CC1OC(C)OC(C)O1,Other,False,0,False
+CC1OCCC1=O,Other,False,0,False
+CC=C(C)C=CC=C(C)C,Acyclic aliphatic,False,0,False
+CC=CC(=O)C1=C(C)C=CCC1(C)C,Terpenoid,False,0,False
+CC=CC(=O)CCCC,Acyclic aliphatic,False,0,False
+CC=CC(=O)O,Other,False,0,False
+CC=CC=O,Other,False,0,False
+CC=Cc1ccc(O)c(OC)c1,Other aromatic,False,1,False
+CC=Cc1ccc(OC)c(OC)c1,Other aromatic,False,2,False
+CC=Cc1ccc(OC)cc1,Other aromatic,False,1,False
+CC=Cc1ccc(OCC)c(O)c1,Other aromatic,False,0,False
+CC=O,Other,False,0,False
+CCC(=O)O,Other,False,0,False
+CCC(=O)OC,Other,False,0,False
+CCC(=O)OCCC(C)CCC=C(C)C,Acyclic aliphatic,False,0,False
+CCC(=O)OCCc1ccccc1,Other aromatic,False,0,False
+CCC(=O)OCc1ccc(OC)cc1,Other aromatic,False,1,False
+CCC(=O)c1c(O)cc(O)cc1O,Other aromatic,False,0,False
+CCC(=O)c1ccc(O)cc1,Other aromatic,False,0,False
+CCC(=O)c1ccccc1,Other aromatic,False,0,False
+CCC(C)(C)C,Other,False,0,False
+CCC(C)(C)CC,Other,False,0,False
+CCC(C)(O)CCC=C(C)C,Acyclic aliphatic,False,0,False
+CCC(C)=O,Other,False,0,False
+CCC(C)C(=O)O,Other,False,0,False
+CCC(C)C(=O)OC,Acyclic aliphatic,False,0,False
+CCC(C)C(=O)OC1CC(C)C=C2C=CC(C)C(CCC3CC(O)CC(=O)O3)C21,Terpenoid,False,0,False
+CCC(C)C(C)=O,Other,False,0,False
+CCC(C)C=O,Other,False,0,False
+CCC(C)CO,Other,False,0,False
+CCC(C)N,Other,False,0,False
+CCC(C)O,Other,False,0,False
+CCC(C)c1ccc(O)cc1,Other aromatic,False,0,False
+CCC(C)c1nccnc1OC,Other aromatic,False,1,False
+CCC(CC)C(=O)O,Acyclic aliphatic,False,0,False
+CCC1(C)CC(=O)NC1=O,Other,False,0,False
+CCC1CCCCC1,Other,False,0,False
+CCC1CN2CCC1CC2C(O)c1ccnc2ccc(OC)cc12,Other alkaloid,False,1,False
+CCC1CN2CCC1CC2C(O)c1ccnc2ccccc12,Other alkaloid,False,0,False
+CCC=C(C)C=O,Other,False,0,False
+CCC=O,Other,False,0,False
+CCCC(=O)CC,Other,False,0,False
+CCCC(=O)O,Other,False,0,False
+CCCC(=O)OCC,Acyclic aliphatic,False,0,False
+CCCC(=O)OCCC(C)C,Acyclic aliphatic,False,0,False
+CCCC(=O)OCCc1ccccc1,Other aromatic,False,0,False
+CCCC(=O)OCc1ccccc1,Other aromatic,False,0,False
+CCCC(=O)c1ccccc1,Other aromatic,False,0,False
+CCCC(C)=O,Other,False,0,False
+CCCC(C)C,Other,False,0,False
+CCCC(C)C=O,Other,False,0,False
+CCCC(C)CC,Other,False,0,False
+CCCC(C)CCC(C)=O,Acyclic aliphatic,False,0,False
+CCCC(C)CO,Other,False,0,False
+CCCC(CC)c1ccccc1,Other aromatic,False,0,False
+CCCC1CCC(=O)O1,Other,False,0,False
+CCCC1CCCCN1,Other,False,0,False
+CCCC=C(C=O)CC,Acyclic aliphatic,False,0,False
+CCCC=O,Other,False,0,False
+CCCCC,Other,False,0,False
+CCCCC(=O)O,Other,False,0,False
+CCCCC(C)C(=O)O,Acyclic aliphatic,False,0,False
+CCCCC(C=O)CC,Acyclic aliphatic,False,0,False
+CCCCC(CC)C(=O)O,Acyclic aliphatic,False,0,False
+CCCCC(CC)COC(=O)c1ccccc1C(=O)O,Other aromatic,False,0,False
+CCCCC(CC)COC(=O)c1ccccc1C(=O)OCC(CC)CCCC,Phthalate,False,0,False
+CCCCC(CC)COC(C)=O,Acyclic aliphatic,False,0,False
+CCCCC1C(=O)N(c2ccccc2)N(c2ccc(O)cc2)C1=O,Other aromatic,False,0,False
+CCCCC1CCC(=O)O1,Terpenoid,False,0,False
+CCCCC1CCCCC(=O)O1,Terpenoid,False,0,False
+CCCCC=O,Other,False,0,False
+CCCCCC,Other,False,0,False
+CCCCCC(=O)CC,Acyclic aliphatic,False,0,False
+CCCCCC(=O)OCC,Acyclic aliphatic,False,0,False
+CCCCCC(C)=O,Acyclic aliphatic,False,0,False
+CCCCCC(C)N,Acyclic aliphatic,False,0,False
+CCCCCC(C)O,Acyclic aliphatic,False,0,False
+CCCCCC(CO)CCC,Acyclic aliphatic,False,0,False
+CCCCCC1=CCCC1=O,Terpenoid,False,0,False
+CCCCCC1C(=O)CCC1CC(=O)OC,Terpenoid,False,0,False
+CCCCCC1CCC(=O)O1,Terpenoid,False,0,False
+CCCCCC=CCC(=O)OC,Acyclic aliphatic,False,0,False
+CCCCCC=O,Other,False,0,False
+CCCCCCC,Other,False,0,False
+CCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCC(=O)OCC,Acyclic aliphatic,False,0,False
+CCCCCCC(C)O,Acyclic aliphatic,False,0,False
+CCCCCCC(CO)CCCC,Acyclic aliphatic,False,0,False
+CCCCCCC1CCC(=O)O1,Terpenoid,False,0,False
+CCCCCCC=O,Acyclic aliphatic,False,0,False
+CCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCC(=O)OC,Acyclic aliphatic,False,0,False
+CCCCCCCC(=O)OCC,Acyclic aliphatic,False,0,False
+CCCCCCCC(=O)OCC(O)CO,Acyclic aliphatic,False,0,False
+CCCCCCCC(=O)OCCCCCC,Acyclic aliphatic,False,0,False
+CCCCCCCC(=O)[O-],Acyclic aliphatic,False,0,False
+CCCCCCCC(C)=O,Acyclic aliphatic,False,0,False
+CCCCCCCC1CCC(=O)O1,Terpenoid,False,0,False
+CCCCCCCC=O,Acyclic aliphatic,False,0,False
+CCCCCCCCC,Acyclic aliphatic,False,0,False
+CCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCC(=O)OCC,Acyclic aliphatic,False,0,False
+CCCCCCCCC(C)=O,Acyclic aliphatic,False,0,False
+CCCCCCCCC(CO)CCCCCC,Acyclic aliphatic,False,0,False
+CCCCCCCCC1CCC(=O)O1,Terpenoid,False,0,False
+CCCCCCCCC=O,Acyclic aliphatic,False,0,False
+CCCCCCCCCC(=O)N(C)C,Acyclic aliphatic,False,0,False
+CCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCCC(=O)OC,Acyclic aliphatic,False,0,False
+CCCCCCCCCC(=O)OCC,Acyclic aliphatic,False,0,False
+CCCCCCCCCC(C)=O,Acyclic aliphatic,False,0,False
+CCCCCCCCCC(C)C=O,Acyclic aliphatic,False,0,False
+CCCCCCCCCC=O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCC(CO)CCCCCCCC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCC=O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCC(=O)OC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCC(=O)OCC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCC(C)=O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCBr,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCC(=O)OC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCC(=O)OC(C)C,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCC(=O)OCC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCC=O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCC1CO1,Terpenoid,False,0,False
+CCCCCCCCCCCCCCCC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCC(=O)OC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCC(=O)OC(C)C,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCC(=O)OC(CO)CO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCC(=O)OCC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCC,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCC(C(=O)O)C(O)(CC(=O)O)C(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCCC#N,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCCC(=O)OCC(O)CO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCCC(=O)[O-],Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCCCCl,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCCCOCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCI,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCOC(C)=O,Acyclic aliphatic,False,0,False
+CCCCCCCCCCCCOS(=O)(=O)[O-],Acyclic aliphatic,False,0,False
+CCCCCCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCCCOC(C)=O,Acyclic aliphatic,False,0,False
+CCCCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCCOC(C)=O,Acyclic aliphatic,False,0,False
+CCCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCCOC(C)=O,Acyclic aliphatic,False,0,False
+CCCCCCCCOc1ccc(C(=O)c2ccccc2)c(O)c1,Other aromatic,False,0,False
+CCCCCCCO,Acyclic aliphatic,False,0,False
+CCCCCCCOC(=O)c1ccccc1C(=O)OCCCCCCC,Phthalate,False,0,False
+CCCCCCCOC(C)=O,Acyclic aliphatic,False,0,False
+CCCCCCN,Other,False,0,False
+CCCCCCO,Other,False,0,False
+CCCCCCOC(=O)CCC,Acyclic aliphatic,False,0,False
+CCCCCCOC(=O)CCCCC,Acyclic aliphatic,False,0,False
+CCCCCCOC(=O)c1ccccc1,Other aromatic,False,0,False
+CCCCCCOC(=O)c1ccccc1C(=O)OCCCCCC,Phthalate,False,0,False
+CCCCCCOC(=O)c1ccccc1O,Other aromatic,False,0,False
+CCCCCCOC(C)=O,Acyclic aliphatic,False,0,False
+CCCCCCS,Other,False,0,False
+CCCCCO,Other,False,0,False
+CCCCCOC(=O)CCC,Acyclic aliphatic,False,0,False
+CCCCCOC(=O)CCCCC,Acyclic aliphatic,False,0,False
+CCCCCOC(C)=O,Acyclic aliphatic,False,0,False
+CCCCCc1ccco1,Other aromatic,False,0,False
+CCCCNCCCC,Acyclic aliphatic,False,0,False
+CCCCO,Other,False,0,False
+CCCCOC(=O)C(=O)OCCCC,Acyclic aliphatic,False,0,False
+CCCCOC(=O)CC,Acyclic aliphatic,False,0,False
+CCCCOC(=O)CCCCCCCCC(=O)OCCCC,Acyclic aliphatic,False,0,False
+CCCCOC(=O)c1ccccc1,Other aromatic,False,0,False
+CCCCOC(=O)c1ccccc1C(=O)O,Other aromatic,False,0,False
+CCCCOC(=O)c1ccccc1C(=O)OCC(CC)CCCC,Phthalate,False,0,False
+CCCCOC(=O)c1ccccc1C(=O)OCCCC,Phthalate,False,0,False
+CCCCOC(C)=O,Acyclic aliphatic,False,0,False
+CCCCOCCO,Acyclic aliphatic,False,0,False
+CCCCOCCOCCO,Acyclic aliphatic,False,0,False
+CCCCOP(=O)(OCCCC)OCCCC,Acyclic aliphatic,False,0,False
+CCCCc1ccccc1,Other aromatic,False,0,False
+CCCN,Other,False,0,False
+CCCO,Other,False,0,False
+CCCOC(=O)c1ccc(O)cc1,Other aromatic,False,0,False
+CCCOC(=O)c1ccccc1C(=O)OCCC,Phthalate,False,0,False
+CCCOCCO,Other,False,0,False
+CCCSSCCC,Acyclic aliphatic,False,0,False
+CCCc1ccc(O)c(OC)c1,Other aromatic,False,1,False
+CCCc1ccccc1,Other aromatic,False,0,False
+CCN,Other,False,0,False
+CCN(CC)C(=O)c1cccc(C)c1,Other aromatic,False,0,False
+CCN(CC)CCOc1ccc(C(=C(Cl)c2ccccc2)c2ccccc2)cc1,Other alkaloid,False,0,False
+CCN(Cc1ccccc1)c1ccccc1,Other aromatic,False,0,False
+CCNC(=O)CCC(N)C(=O)O,Acyclic aliphatic,False,0,False
+CCNCC,Other,False,0,False
+CCO,Other,False,0,False
+CCOC(=O)C(=O)OCC,Acyclic aliphatic,False,0,False
+CCOC(=O)C(C)O,Acyclic aliphatic,False,0,False
+CCOC(=O)CC,Other,False,0,False
+CCOC(=O)CC(=O)OCC,Acyclic aliphatic,False,0,False
+CCOC(=O)CC(C)O,Acyclic aliphatic,False,0,False
+CCOC(=O)CC(O)(CC(=O)OCC)C(=O)OCC,Acyclic aliphatic,False,0,False
+CCOC(=O)CCC(=O)OCC,Acyclic aliphatic,False,0,False
+CCOC(=O)CCCCCCCCC(=O)OCC,Acyclic aliphatic,False,0,False
+CCOC(=O)OCC,Acyclic aliphatic,False,0,False
+CCOC(=O)c1c(C)cc(O)cc1O,Other aromatic,False,0,False
+CCOC(=O)c1ccc(C)cc1,Other aromatic,False,0,False
+CCOC(=O)c1ccc(O)c(O)c1,Other aromatic,False,0,False
+CCOC(=O)c1ccc(O)cc1,Other aromatic,False,0,False
+CCOC(=O)c1ccccc1,Other aromatic,False,0,False
+CCOC(=O)c1ccccc1C(=O)OCC,Phthalate,False,0,False
+CCOC(=O)c1ccccc1O,Other aromatic,False,0,False
+CCOC(C)=O,Other,False,0,False
+CCOC(C)OCC,Acyclic aliphatic,False,0,False
+CCOC(N)=O,Other,False,0,False
+CCOC(OCC)OCC,Acyclic aliphatic,False,0,False
+CCOCC(C)O,Other,False,0,False
+CCOCCOCC,Acyclic aliphatic,False,0,False
+CCOCCOCCO,Acyclic aliphatic,False,0,False
+CCOS(=O)(=O)OCC,Acyclic aliphatic,False,0,False
+CCO[Si](C)(C)OCC,Acyclic aliphatic,False,0,False
+CCOc1cc(C=O)ccc1O,Other aromatic,False,0,False
+CCSCC,Other,False,0,False
+CCc1cc(Cc2cc(CC)cc(C(C)(C)C)c2O)c(O)c(C(C)(C)C)c1,Other aromatic,False,0,False
+CCc1ccc(C)cc1,Other aromatic,False,0,False
+CCc1ccc(C=O)cc1,Other aromatic,False,0,False
+CCc1ccc(O)c(OC)c1,Other aromatic,False,1,False
+CCc1ccc(O)cc1,Other aromatic,False,0,False
+CCc1cccc(C)c1,Other aromatic,False,0,False
+CCc1cccc(CC)c1,Other aromatic,False,0,False
+CCc1cccc(O)c1,Other aromatic,False,0,False
+CCc1ccccc1,Other aromatic,False,0,False
+CCc1ccccc1C,Other aromatic,False,0,False
+CCn1cc(C(=O)O)c(=O)c2ccc(C)nc21,Other alkaloid,False,0,False
+CN,Other,False,0,False
+CN(C)C,Other,False,0,False
+CN(C)C=O,Other,False,0,False
+CN(C)CCc1c[nH]c2ccc(O)cc12,Other alkaloid,False,0,False
+CN(C)CCc1c[nH]c2ccccc12,Other alkaloid,False,0,False
+CN(C)CCc1ccc(O)cc1,Other aromatic,False,0,False
+CN(C)Cc1c[nH]c2ccccc12,Other alkaloid,False,0,False
+CN(C)Cc1ccccc1,Other aromatic,False,0,False
+CN(C)NC(=O)CCC(=O)O,Acyclic aliphatic,False,0,False
+CN(CC(=O)O)C(=N)N,Acyclic aliphatic,False,0,False
+CN1C(CC(=O)c2ccccc2)CCCC1CC(O)c1ccccc1,Other alkaloid,False,0,False
+CN1C2CC(OC(=O)C(CO)c3ccccc3)CC1C(O)C2,Other alkaloid,False,0,False
+CN1C2CC3CC1C(O3)C2O,Other,False,0,False
+CN1C2CCC1CC(OC(=O)C(CO)c1ccccc1)C2,Other alkaloid,False,0,False
+CN1CC(=O)N=C1N,Other,False,0,False
+CN1CC(=O)NC1=N,Other,False,0,False
+CN1CCC(N(Cc2ccccc2)c2ccccc2)CC1,Other alkaloid,False,0,False
+CN1CCCC1=O,Other,False,0,False
+CN1CCCC1c1cccnc1,Other alkaloid,False,0,False
+CN1CCN(C)CC1,Other,False,0,False
+CN1CCc2cc3c(cc2C1C1OC(=O)c2c1ccc1c2OCO1)OCO3,Isoquinoline alkaloid,True,0,False
+CN1Cc2c(ccc3c2OCO3)C2C(O)Cc3cc4c(cc3C21)OCO4,Isoquinoline alkaloid,True,0,False
+CN=C=S,Other,False,0,False
+CNC(=O)Oc1ccc2c(c1)C1(C)CCN(C)C1N2C,Other alkaloid,False,0,False
+CNC(=O)Oc1ccccc1OC(C)C,Other aromatic,False,0,False
+CNC(=O)c1ccccc1,Other aromatic,False,0,False
+CNC(=S)NC,Other,False,0,False
+CNC(C)C(O)c1ccccc1,Other aromatic,False,0,False
+CNC(C)Cc1ccc2c(c1)OCO2,Other alkaloid,True,0,False
+CNC(Cc1c[nH]c2ccccc12)C(=O)O,Other alkaloid,False,0,False
+CNCC(O)c1cccc(O)c1,Other aromatic,False,0,False
+CNCCC(Oc1ccc(C(F)(F)F)cc1)c1ccccc1,Other alkaloid,False,0,False
+CNCc1ccccc1,Other aromatic,False,0,False
+CNc1ccccc1C(=O)O,Other aromatic,False,0,False
+CO,Other,False,0,False
+COC(=O)C1=CCCN(C)C1,Other,False,0,False
+COC(=O)C=C(C)CCC=C(C)C,Acyclic aliphatic,False,0,False
+COC(=O)CC(C)=O,Acyclic aliphatic,False,0,False
+COC(=O)CCC(=O)O,Acyclic aliphatic,False,0,False
+COC(=O)CCC(=O)OC,Acyclic aliphatic,False,0,False
+COC(=O)CCCCCCCC(=O)OC,Acyclic aliphatic,False,0,False
+COC(=O)Cc1ccccc1,Other aromatic,False,0,False
+COC(=O)c1c(C)cc(O)c(C)c1O,Other aromatic,False,0,False
+COC(=O)c1c(C)cc(OC(=O)c2c(C)cc(O)c(C=O)c2O)c(C)c1O,Other aromatic,False,0,False
+COC(=O)c1ccc(O)cc1,Other aromatic,False,0,False
+COC(=O)c1ccc(OC)cc1,Other aromatic,False,1,False
+COC(=O)c1ccccc1,Other aromatic,False,0,False
+COC(=O)c1ccccc1C(=O)O,Other aromatic,False,0,False
+COC(=O)c1ccccc1C(=O)OC,Phthalate,False,0,False
+COC(=O)c1ccccc1N,Other aromatic,False,0,False
+COC(C)(C)CC(C)=O,Acyclic aliphatic,False,0,False
+COC(C)=O,Other,False,0,False
+COC(C)COC(C)COC(C)CO,Acyclic aliphatic,False,0,False
+COC(C)OC,Other,False,0,False
+COC1=CC(=O)OC(CCc2ccc3c(c2)OCO3)C1,Other aromatic,True,0,False
+COC1=CC23CCCN2CCc2cc4c(cc2C3C1O)OCO4,Other alkaloid,True,0,False
+COC1C(O)C(O)C(O)C(O)C1O,Terpenoid,False,0,False
+COCC(C)OC(C)=O,Acyclic aliphatic,False,0,False
+COCC(O)CO,Other,False,0,False
+COCCOC(=O)c1ccccc1C(=O)OCCOC,Phthalate,False,0,False
+COCCOCCOCCOCCOCCO,Acyclic aliphatic,False,0,False
+COCc1ccc(COC)cc1,Other aromatic,False,0,False
+COP(=O)(OC)OC=C(Cl)Cl,Acyclic aliphatic,False,0,False
+COS(=O)(=O)OC,Other,False,0,False
+COc1c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c2c1=O,Flavonoid,False,1,False
+COc1c(-c2ccccc2)oc2c(ccc3occc32)c1=O,Flavonoid,False,1,False
+COc1c(C(C)(C)C)cc([N+](=O)[O-])c(C)c1[N+](=O)[O-],Other aromatic,False,1,False
+COc1c(C(C)C)oc2cc3oc(=O)ccc3cc12,Furanocoumarin,False,1,False
+COc1c(O)cc2oc3cc(O)c(CC=C(C)C)c(O)c3c(=O)c2c1CC=C(C)C,Other aromatic,False,1,False
+COc1c(OC)c2occc2c2oc(=O)ccc12,Furanocoumarin,False,2,False
+COc1c2ccccc2nc2occc12,Other alkaloid,False,1,False
+COc1c2ccoc2c(OC)c2oc(=O)ccc12,Furanocoumarin,False,2,False
+COc1c2ccoc2cc2oc(=O)ccc12,Furanocoumarin,False,1,False
+COc1c2ccoc2cc2oc(C)cc(=O)c12,Other aromatic,False,1,False
+COc1cc(-c2oc3cc(O)cc(O)c3c(=O)c2O)ccc1O,Flavonoid,False,1,False
+COc1cc(=O)n(C)c2c(OCC(O)C(C)(C)O)cccc12,Other aromatic,False,1,False
+COc1cc(C(=S)N2CCOCC2)cc(OC)c1OC,Other aromatic,False,3,False
+COc1cc(C(C)=O)cc(OC)c1O,Other aromatic,False,2,False
+COc1cc(C(C)C)ccc1C,Other aromatic,False,1,False
+COc1cc(C)c2c(c1C=O)Oc1c(c(C)c(O)c3c1C(O)OC3=O)OC2=O,Other aromatic,False,1,False
+COc1cc(C)ccc1C(C)C,Other aromatic,False,1,False
+COc1cc(C)ccc1O,Other aromatic,False,1,False
+COc1cc(C2Oc3cc(C4Oc5cc(O)cc(O)c5C(=O)C4O)ccc3OC2CO)ccc1O,Flavonoid,False,1,False
+COc1cc(C2c3cc4c(c(O)c3CC3COC(=O)C32)OCO4)cc(OC)c1OC,Other aromatic,True,3,False
+COc1cc(C2c3cc4c(cc3C(O)C3COC(=O)C23)OCO4)cc(OC)c1O,Other aromatic,True,2,False
+COc1cc(C=O)ccc1O,Other aromatic,False,1,False
+COc1cc(CCC(C)=O)ccc1O,Other aromatic,False,1,False
+COc1cc(CCN)cc(OC)c1OC,Other aromatic,False,3,False
+COc1cc(O)c(C(C)=O)c(OC)c1,Other aromatic,False,2,False
+COc1cc(O)c2c(=O)cc(-c3ccccc3)oc2c1,Flavonoid,False,1,False
+COc1cc(O)c2c(c1)C(=O)c1cc(C)cc(O)c1C2=O,Anthraquinone,False,1,False
+COc1cc(O)ccc1C(C)=O,Other aromatic,False,1,False
+COc1cc(OC)c2c(=O)c(O)c(-c3ccc(OC)c(OC)c3)oc2c1,Flavonoid,False,4,False
+COc1cc(OC)c2c(=O)c(OC)c(-c3ccc(OC)c(OC)c3)oc2c1,Flavonoid,False,5,False
+COc1cc(OC)c2c(c1)OC(c1ccc(OC)c(OC)c1)C(O)C2,Flavonoid,False,4,False
+COc1cc(OC)c2c(c1)OC(c1ccccc1)CC2=O,Flavonoid,False,2,False
+COc1cc(OC)c2ccc(=O)oc2c1,Coumarin,False,2,False
+COc1cc(OC)cc(OC)c1,Other aromatic,False,3,False
+COc1cc2c(c(OC)c1OC)-c1ccc(O)c(=O)cc1C(NC(C)=O)CC2,Other aromatic,False,3,False
+COc1cc2c(c(OC)c1OC)-c1ccc(OC)c(=O)cc1C(NC(C)=O)CC2,Other aromatic,False,4,False
+COc1cc2c(cc1-c1cc3cc4ccoc4cc3oc1=O)OCO2,Furanocoumarin,True,1,False
+COc1cc2c(cc1O)C(Cc1ccc(O)cc1)N(C)CC2,Isoquinoline alkaloid,False,1,False
+COc1cc2c(cc1O)C(Cc1ccc(O)cc1)[N+](C)(C)CC2,Isoquinoline alkaloid,False,1,False
+COc1cc2c(cc1O)CC1c3c(cc(O)c(OC)c3-2)CCN1C,Isoquinoline alkaloid,False,2,False
+COc1cc2c(cc1O)CCNC2C,Isoquinoline alkaloid,False,1,False
+COc1cc2c(cc1OC)-c1c(OC)c(OC)cc3ccnc(c13)C2=O,Isoquinoline alkaloid,False,4,False
+COc1cc2c(cc1OC)C(=O)Cc1ccc3c(c1CN(C)CC2)OCO3,Other alkaloid,True,2,False
+COc1cc2c(cc1OC)C(=O)N(C)CC2,Isoquinoline alkaloid,False,2,False
+COc1cc2c(cc1OC)C(C)NCC2,Isoquinoline alkaloid,False,2,False
+COc1cc2c(cc1OC)C1C(=O)c3c(O)cc4c(c3OC1CO2)C=CC(C)(C)O4,Flavonoid,False,2,False
+COc1cc2c(cc1OC)C1C(=O)c3c(cc4c(c3O)C=CC(C)(C)O4)OC1CO2,Flavonoid,False,2,False
+COc1cc2c(cc1OC)C1C(=O)c3ccc4c(c3OC1CO2)C=CC(C)(C)O4,Flavonoid,False,2,False
+COc1cc2c3cc1Oc1cc(ccc1O)CC1c4c(cc(OC)c(O)c4Oc4ccc(cc4)CC3N(C)CC2)CC[N+]1(C)C,Isoquinoline alkaloid,False,2,False
+COc1cc2cc3c4c(cc(OC)c(OC)c4c2cc1OC)CCN3C,Isoquinoline alkaloid,False,4,False
+COc1cc2ccc(=O)oc2c(O)c1O,Coumarin,False,1,False
+COc1cc2ccc(=O)oc2c(OC)c1OC,Coumarin,False,3,False
+COc1cc2occc2c2oc(=O)ccc12,Furanocoumarin,False,1,False
+COc1ccc(-c2cc(=O)c3c(OC)c(OC)c(OC)c(OC)c3o2)cc1,Flavonoid,False,5,False
+COc1ccc(-c2cc(=O)c3c(OC)c(OC)c(OC)c(OC)c3o2)cc1OC,Flavonoid,False,6,False
+COc1ccc(-c2cc(=O)c3ccc(O)cc3o2)cc1,Flavonoid,False,1,False
+COc1ccc(-c2cc(=O)c3ccccc3o2)cc1OC,Flavonoid,False,2,False
+COc1ccc(-c2coc3cc(O)cc(O)c3c2=O)cc1,Flavonoid,False,1,False
+COc1ccc(-c2coc3cc(O)ccc3c2=O)c(O)c1O,Flavonoid,False,1,False
+COc1ccc(-c2coc3cc(O)ccc3c2=O)cc1,Flavonoid,False,1,False
+COc1ccc(-c2coc3cc(OC4OC(CO)C(O)C(O)C4O)cc(O)c3c2=O)cc1,Glycoside,False,1,True
+COc1ccc(C(=O)O)cc1,Other aromatic,False,1,False
+COc1ccc(C(=O)O)cc1OC,Other aromatic,False,2,False
+COc1ccc(C(C)=O)c(O)c1,Other aromatic,False,1,False
+COc1ccc(C(C)=O)cc1,Other aromatic,False,1,False
+COc1ccc(C(C)C(=O)c2ccc(O)cc2O)cc1,Other aromatic,False,1,False
+COc1ccc(C)cc1,Other aromatic,False,1,False
+COc1ccc(C2CC(=O)c3c(O)cc(O)cc3O2)cc1O,Flavonoid,False,1,False
+COc1ccc(C2CC(=O)c3c(O)cc(OC4OC(COC5OC(C)C(O)C(O)C5O)C(O)C(O)C4O)cc3O2)cc1O,Glycoside,False,1,True
+COc1ccc(C=O)cc1,Other aromatic,False,1,False
+COc1ccc(C=O)cc1O,Other aromatic,False,1,False
+COc1ccc(C=O)cc1OC,Other aromatic,False,2,False
+COc1ccc(CC2c3cc(OC)c(OC)cc3CCN2C)cc1OC,Isoquinoline alkaloid,False,4,False
+COc1ccc(CCC(C)=O)cc1,Other aromatic,False,1,False
+COc1ccc(CCO)cc1,Other aromatic,False,1,False
+COc1ccc(CO)cc1,Other aromatic,False,1,False
+COc1ccc(Cc2nccc3cc(OC)c(OC)cc23)cc1OC,Isoquinoline alkaloid,False,4,False
+COc1ccc(O)c(C(C)(C)C)c1,Other aromatic,False,1,False
+COc1ccc(O)cc1,Other aromatic,False,1,False
+COc1ccc(OC)c(OC)c1,Other aromatic,False,3,False
+COc1ccc(OC)cc1,Other aromatic,False,2,False
+COc1ccc2c(=O)cc(-c3ccc(O)cc3)oc2c1,Flavonoid,False,1,False
+COc1ccc2c(C)cc(=O)oc2c1,Coumarin,False,1,False
+COc1ccc2c(OC)c3ccoc3nc2c1OC,Other alkaloid,False,3,False
+COc1ccc2c(c1)[nH]c1c(C)nccc12,Other alkaloid,False,1,False
+COc1ccc2c(c1OC)C(=O)OC2C1c2cc3c(cc2CCN1C)OCO3,Isoquinoline alkaloid,True,2,False
+COc1ccc2c(c1OC)CN1CCc3cc4c(cc3C1C2)OCO4,Isoquinoline alkaloid,True,2,False
+COc1ccc2c3c([nH]c2c1)C(C)=NCC3,Other aromatic,False,1,False
+COc1ccc2cc1Oc1ccc(cc1)CC1c3cc(c(OC)cc3CCN1C)Oc1c(OC)c(OC)cc3c1C(C2)N(C)CC3,Isoquinoline alkaloid,False,4,False
+COc1ccc2cc3[n+](cc2c1OC)CCc1cc2c(cc1-3)OCO2,Isoquinoline alkaloid,True,2,False
+COc1ccc2ccc(=O)oc2c1,Coumarin,False,1,False
+COc1ccc2ccc(=O)oc2c1CC=C(C)C,Coumarin,False,1,False
+COc1ccc2ccccc2c1,Other aromatic,False,1,False
+COc1cccc(C=O)c1,Other aromatic,False,1,False
+COc1cccc(N)c1,Other aromatic,False,1,False
+COc1cccc(O)c1,Other aromatic,False,1,False
+COc1cccc(OC)c1,Other aromatic,False,2,False
+COc1cccc(OC)c1C(=O)O,Other aromatic,False,2,False
+COc1cccc(OC)c1O,Other aromatic,False,2,False
+COc1cccc2c1C(=O)CC(c1ccccc1)O2,Flavonoid,False,1,False
+COc1cccc2ccccc12,Other aromatic,False,1,False
+COc1ccccc1C=CC=O,Other aromatic,False,1,False
+COc1ccccc1C=O,Other aromatic,False,1,False
+COc1ccccc1O,Other aromatic,False,1,False
+COc1ccccc1OC,Other aromatic,False,2,False
+COc1nccnc1CC(C)C,Other aromatic,False,1,False
+CS(=O)(=O)c1ccc(Cl)cc1,Other aromatic,False,0,False
+CS(C)(=O)=O,Other,False,0,False
+CSCCCN=C=S,Acyclic aliphatic,False,0,False
+CSSC,Other,False,0,False
+CSc1nc(N=[N+]=[N-])nc(NC(C)C)n1,Other aromatic,False,0,False
+C[N+](C)(C)CC(O)CC(=O)O,Acyclic aliphatic,False,0,False
+C[S+](C)[O-],Other,False,0,False
+C[S+]([O-])CCC(N)C(=O)O,Acyclic aliphatic,False,0,False
+C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O1,Other,False,0,False
+C[Si]1(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O[Si](C)(C)O1,Other,False,0,False
+C[n+]1cccc(C(=O)[O-])c1,Other aromatic,False,0,False
+Cc1c(C)c2c(c(C)c1O)CCC(C)(CCCC(C)CCCC(C)CCCC(C)C)O2,Other aromatic,False,0,False
+Cc1c(N)cccc1N,Other aromatic,False,0,False
+Cc1c[nH]c(=O)[nH]c1=O,Other aromatic,False,0,False
+Cc1c[nH]c2ccccc12,Other aromatic,False,0,False
+Cc1cc(=O)[nH]c(=O)[nH]1,Other aromatic,False,0,False
+Cc1cc(=O)c2c(O)cc(O)c(C)c2o1,Other aromatic,False,0,False
+Cc1cc(=O)oc2cc(O)cc(O)c12,Coumarin,False,0,False
+Cc1cc(C)c(C)cc1C,Other aromatic,False,0,False
+Cc1cc(C)c(C=O)c(C)c1,Other aromatic,False,0,False
+Cc1cc(C)c(O)c(C)c1,Other aromatic,False,0,False
+Cc1cc(C)cc(C)c1,Other aromatic,False,0,False
+Cc1cc(C)cc(O)c1,Other aromatic,False,0,False
+Cc1cc(N)c2ccccc2[n+]1CCCCCCCCCC[n+]1c(C)cc(N)c2ccccc21,Other alkaloid,False,0,False
+Cc1cc(N)no1,Other aromatic,False,0,False
+Cc1cc(O)c(C)c(C)c1O,Other aromatic,False,0,False
+Cc1cc(O)c2c(O)c3c(O)cccc3cc2c1,Other aromatic,False,0,False
+Cc1cc(O)c2c(c1)C(=O)c1cc(O)cc(O)c1C2=O,Anthraquinone,False,0,False
+Cc1cc(O)c2c(c1)C(=O)c1cccc(O)c1C2=O,Anthraquinone,False,0,False
+Cc1cc(O)cc(O)c1C(=O)O,Other aromatic,False,0,False
+Cc1cc(O)ccc1O,Other aromatic,False,0,False
+Cc1cc(OC(=O)c2c(C)cc(O)cc2O)cc(O)c1C(=O)O,Other aromatic,False,0,False
+Cc1cc2nc3c(=O)[nH]c(=O)nc-3n(CC(O)C(O)C(O)CO)c2cc1C,Other alkaloid,False,0,False
+Cc1ccc(C(=O)Cl)cc1,Other aromatic,False,0,False
+Cc1ccc(C(=O)O)cc1,Other aromatic,False,0,False
+Cc1ccc(C(C)(C)C)cc1,Other aromatic,False,0,False
+Cc1ccc(C(C)(C)O)cc1,Other aromatic,False,0,False
+Cc1ccc(C(C)C)c(O)c1,Other aromatic,False,0,False
+Cc1ccc(C(C)C)cc1,Other aromatic,False,0,False
+Cc1ccc(C(C)C)cc1O,Other aromatic,False,0,False
+Cc1ccc(C)c(C)c1,Other aromatic,False,0,False
+Cc1ccc(C)c(O)c1,Other aromatic,False,0,False
+Cc1ccc(C)c2ccccc12,Other aromatic,False,0,False
+Cc1ccc(C)cc1,Other aromatic,False,0,False
+Cc1ccc(C)o1,Other aromatic,False,0,False
+Cc1ccc(C=O)cc1,Other aromatic,False,0,False
+Cc1ccc(C=O)cc1C,Other aromatic,False,0,False
+Cc1ccc(N)c(N)c1,Other aromatic,False,0,False
+Cc1ccc(O)c(C)c1,Other aromatic,False,0,False
+Cc1ccc(O)cn1,Other aromatic,False,0,False
+Cc1ccc2c(C)cccc2c1,Other aromatic,False,0,False
+Cc1ccc2c(c1)C(=O)c1ccccc1C2=O,Anthraquinone,False,0,False
+Cc1ccc2cc(C)ccc2c1,Other aromatic,False,0,False
+Cc1ccc2ccccc2c1,Other aromatic,False,0,False
+Cc1ccc2nc3sc(=O)sc3nc2c1,Other alkaloid,False,0,False
+Cc1cccc(C)c1,Other aromatic,False,0,False
+Cc1cccc(C)c1C,Other aromatic,False,0,False
+Cc1cccc(C)n1,Other aromatic,False,0,False
+Cc1cccc(O)c1,Other aromatic,False,0,False
+Cc1cccc(O)c1C,Other aromatic,False,0,False
+Cc1cccc2c1ccc1ccccc12,Other aromatic,False,0,False
+Cc1cccc2ccccc12,Other aromatic,False,0,False
+Cc1ccccc1C,Other aromatic,False,0,False
+Cc1ccccc1C#N,Other aromatic,False,0,False
+Cc1ccccc1C=O,Other aromatic,False,0,False
+Cc1ccccc1O,Other aromatic,False,0,False
+Cc1ccccc1S(N)(=O)=O,Other aromatic,False,0,False
+Cc1ccccn1,Other aromatic,False,0,False
+Cc1cccnc1,Other aromatic,False,0,False
+Cc1ccco1,Other aromatic,False,0,False
+Cc1cnc(C)c(C)n1,Other aromatic,False,0,False
+Cc1cnccn1,Other aromatic,False,0,False
+Cc1nc(C)c(C)nc1C,Other aromatic,False,0,False
+Cc1nc2ccccc2s1,Other aromatic,False,0,False
+Cc1occc(=O)c1O,Other aromatic,False,0,False
+ClC(Cl)C(Cl)Cl,Other,False,0,False
+ClC1C(Cl)C(Cl)C(Cl)C(Cl)C1Cl,Other,False,0,False
+ClC=CCCl,Other,False,0,False
+ClCCCl,Other,False,0,False
+ClCCl,Other,False,0,False
+ClCc1ccccc1,Other aromatic,False,0,False
+Clc1ccc(Cl)cc1,Other aromatic,False,0,False
+Clc1cccc(Cl)c1,Other aromatic,False,0,False
+Clc1ccccc1Cl,Other aromatic,False,0,False
+Cn1c(=O)c2c(ncn2C)n(C)c1=O,Other alkaloid,False,0,False
+Cn1cccc1,Other aromatic,False,0,False
+Cn1cnc2ncnc(N)c21,Other aromatic,False,0,False
+II,Other,False,0,False
+N#CC(O)c1ccccc1,Other aromatic,False,0,False
+N#CCc1ccccc1,Other aromatic,False,0,False
+N#CSCc1ccccc1,Other aromatic,False,0,False
+N#Cc1ccncc1,Other aromatic,False,0,False
+N=C(N)N,Other,False,0,False
+NC(=O)CCl,Other,False,0,False
+NC(=O)CF,Other,False,0,False
+NC(=O)NC1NC(=O)NC1=O,Other,False,0,False
+NC(=O)NCC(N)C(=O)O,Acyclic aliphatic,False,0,False
+NC(=O)OCCCc1ccccc1,Other aromatic,False,0,False
+NC(=O)c1ccccc1,Other aromatic,False,0,False
+NC(C(=O)O)C(O)C(=O)O,Acyclic aliphatic,False,0,False
+NC(CCC(=O)O)C(=O)O,Acyclic aliphatic,False,0,False
+NC(CS)C(=O)O,Other,False,0,False
+NC(CSCSCC(N)C(=O)O)C(=O)O,Acyclic aliphatic,False,0,False
+NC(Cc1ccc(O)c(O)c1)C(=O)O,Other aromatic,False,0,False
+NC(Cn1ccc(=O)c(O)c1)C(=O)O,Other aromatic,False,0,False
+NC(N)=NOCCC(N)C(=O)O,Acyclic aliphatic,False,0,False
+NC(N)=O,Other,False,0,False
+NC1=NC(=O)C(c2ccccc2)O1,Other aromatic,False,0,False
+NC1CCCCC1,Other,False,0,False
+NCC(O)c1ccc(O)cc1,Other aromatic,False,0,False
+NCCCC(N)C(=O)O,Acyclic aliphatic,False,0,False
+NCCCCN=C(N)N,Acyclic aliphatic,False,0,False
+NCCCCNCCCN,Acyclic aliphatic,False,0,False
+NCCCNCCCCNCCCN,Acyclic aliphatic,False,0,False
+NCCS,Other,False,0,False
+NCCc1c[nH]c2ccccc12,Other alkaloid,False,0,False
+NNC(=O)OCc1ccccc1,Other aromatic,False,0,False
+NS(=O)(=O)O,Other,False,0,False
+Nc1c2ccccc2nc2ccccc12,Other alkaloid,False,0,False
+Nc1ccc(-c2ccccc2)cc1,Other aromatic,False,0,False
+Nc1ccc(C(=O)O)cc1,Other aromatic,False,0,False
+Nc1ccc(Cl)c(Cl)c1,Other aromatic,False,0,False
+Nc1ccc(O)cc1,Other aromatic,False,0,False
+Nc1ccc(S(=O)(=O)O)cc1,Other aromatic,False,0,False
+Nc1ccccc1C(=O)CC(N)C(=O)O,Other aromatic,False,0,False
+Nc1ccccc1C(=O)O,Other aromatic,False,0,False
+Nc1ccccn1,Other aromatic,False,0,False
+Nc1ccn(C2OC(CO)C(O)C2O)c(=O)n1,Other alkaloid,False,0,False
+Nc1ccnc(=O)[nH]1,Other aromatic,False,0,False
+Nc1nc2c(c(=O)[nH]1)N(C=O)C(CNc1ccc(C(=O)NC(CCC(=O)[O-])C(=O)[O-])cc1)CN2,Other alkaloid,False,0,False
+Nc1nc2ncc(=O)[nH]c2c(=O)[nH]1,Other alkaloid,False,0,False
+Nc1nc2ncc(CNc3ccc(C(=O)NC(CCC(=O)O)C(=O)O)cc3)nc2c(=O)[nH]1,Other alkaloid,False,0,False
+Nc1ncnc2c1ncn2C1OC(CO)C(O)C1O,Other alkaloid,False,0,False
+Nc1ncnc2c1ncn2C1OC(COP(=O)(O)O)C(O)C1O,Other alkaloid,False,0,False
+Nc1ncnc2nc[nH]c12,Other aromatic,False,0,False
+O=C(CC(=O)c1ccccc1)c1ccccc1,Other aromatic,False,0,False
+O=C(O)C(=O)Cc1ccccc1,Other aromatic,False,0,False
+O=C(O)C(=O)O,Other,False,0,False
+O=C(O)C(Cl)(Cl)Cl,Other,False,0,False
+O=C(O)C(O)C(O)C(=O)O,Acyclic aliphatic,False,0,False
+O=C(O)C(O)C(O)C(O)C(O)C(=O)O,Acyclic aliphatic,False,0,False
+O=C(O)C1(O)CC(O)C(O)C(O)C1,Terpenoid,False,0,False
+O=C(O)C1=CCCNC1,Other,False,0,False
+O=C(O)C1=CCNCC1,Other,False,0,False
+O=C(O)C1CCC1,Other,False,0,False
+O=C(O)C1OC(O)C(O)C(O)C1O,Glycoside,False,0,True
+O=C(O)CC(=O)C(=O)O,Acyclic aliphatic,False,0,False
+O=C(O)CC(=O)O,Other,False,0,False
+O=C(O)CC(O)(CC(=O)O)C(=O)O,Acyclic aliphatic,False,0,False
+O=C(O)CC(O)C(=O)O,Acyclic aliphatic,False,0,False
+O=C(O)CCC(=O)C(=O)O,Acyclic aliphatic,False,0,False
+O=C(O)CCC(=O)O,Acyclic aliphatic,False,0,False
+O=C(O)CCCC(=O)O,Acyclic aliphatic,False,0,False
+O=C(O)CCCCC1CCSS1,Other,False,0,False
+O=C(O)CCCCC1SCC2NC(=O)NC21,Other,False,0,False
+O=C(O)CCCCCC(=O)O,Acyclic aliphatic,False,0,False
+O=C(O)CCCCCCC(=O)O,Acyclic aliphatic,False,0,False
+O=C(O)CCc1ccccc1,Other aromatic,False,0,False
+O=C(O)CCl,Other,False,0,False
+O=C(O)CNC(=O)c1ccccc1,Other aromatic,False,0,False
+O=C(O)CO,Other,False,0,False
+O=C(O)Cc1c[nH]c2ccccc12,Other aromatic,False,0,False
+O=C(O)Cc1ccccc1,Other aromatic,False,0,False
+O=C(O)c1cc(-c2ccccc2)nc2ccccc12,Other alkaloid,False,0,False
+O=C(O)c1cc(O)c(O)c(O)c1,Other aromatic,False,0,False
+O=C(O)c1cc(O)c2c(c1)C(=O)c1cccc(O)c1C2=O,Anthraquinone,False,0,False
+O=C(O)c1ccc(C(=O)O)cc1,Other aromatic,False,0,False
+O=C(O)c1ccc(CO)o1,Other aromatic,False,0,False
+O=C(O)c1ccc(O)c(O)c1,Other aromatic,False,0,False
+O=C(O)c1ccc(O)cc1,Other aromatic,False,0,False
+O=C(O)c1ccc(O)cc1O,Other aromatic,False,0,False
+O=C(O)c1ccc2c(c1)OCO2,Other aromatic,True,0,False
+O=C(O)c1cccc(C(=O)O)c1,Other aromatic,False,0,False
+O=C(O)c1cccc(C(=O)O)n1,Other aromatic,False,0,False
+O=C(O)c1cccc(O)c1,Other aromatic,False,0,False
+O=C(O)c1ccccc1,Other aromatic,False,0,False
+O=C(O)c1ccccc1C(=O)O,Other aromatic,False,0,False
+O=C(O)c1ccccc1O,Other aromatic,False,0,False
+O=C(O)c1ccccc1[N+](=O)[O-],Other aromatic,False,0,False
+O=C(O)c1ccccc1[O-],Other aromatic,False,0,False
+O=C(O)c1ccco1,Other aromatic,False,0,False
+O=C(OC1Cc2c(O)cc(O)cc2OC1c1cc(O)c(=O)c2c(O)c(O)cc(C3Oc4cc(O)cc(O)c4CC3OC(=O)c3cc(O)c(O)c(O)c3)c2c1)c1cc(O)c(O)c(O)c1,Flavonoid,False,0,False
+O=C(OC1Cc2c(O)cc(O)cc2OC1c1cc(O)c(O)c(O)c1)c1cc(O)c(O)c(O)c1,Flavonoid,False,0,False
+O=C(OC1Cc2c(O)cc(O)cc2OC1c1cc(O)c(O)c(O)c1-c1c(C2Oc3cc(O)cc(O)c3CC2OC(=O)c2cc(O)c(O)c(O)c2)cc(O)c(O)c1O)c1cc(O)c(O)c(O)c1,Flavonoid,False,0,False
+O=C(OCCOCCOC(=O)c1ccccc1)c1ccccc1,Other aromatic,False,0,False
+O=C(OCCc1ccccc1)c1ccccc1,Other aromatic,False,0,False
+O=C(OCc1ccccc1)c1ccccc1,Other aromatic,False,0,False
+O=C(OCc1ccccc1)c1ccccc1O,Other aromatic,False,0,False
+O=C(OOC(=O)c1ccccc1)c1ccccc1,Other aromatic,False,0,False
+O=C(Oc1ccccc1C(=O)O)c1ccccc1O,Other aromatic,False,0,False
+O=C([O-])C(=O)[O-],Other,False,0,False
+O=C([O-])CC(O)(CC(=O)[O-])C(=O)[O-],Acyclic aliphatic,False,0,False
+O=C([O-])[O-],Other,False,0,False
+O=C([O-])c1ccccc1,Other aromatic,False,0,False
+O=C(c1ccccc1)C(O)c1ccccc1,Other aromatic,False,0,False
+O=C(c1ccccc1)c1ccccc1,Other aromatic,False,0,False
+O=C1C(c2[nH]c3ccccc3c2O)=Nc2ccccc21,Other aromatic,False,0,False
+O=C1C=CC(=C(c2ccc(O)cc2)c2ccc(O)cc2)C=C1,Other aromatic,False,0,False
+O=C1C=CC(=O)C=C1,Other,False,0,False
+O=C1C=CC(=O)O1,Other,False,0,False
+O=C1C=CC(=O)c2ccccc21,Other aromatic,False,0,False
+O=C1C=CC2=C3c4cc(O)c(O)cc4CC3(O)COC2=C1O,Other aromatic,False,0,False
+O=C1C=CCCC1,Other,False,0,False
+O=C1CC(c2ccc(O)c(O)c2)Oc2cc(O)cc(O)c21,Flavonoid,False,0,False
+O=C1CC(c2ccc(O)cc2)Oc2cc(O)cc(O)c21,Flavonoid,False,0,False
+O=C1CC(c2ccccc2)Oc2ccccc21,Flavonoid,False,0,False
+O=C1CCC(=O)N1,Other,False,0,False
+O=C1CCC(=O)O1,Other,False,0,False
+O=C1CCCC2C3CC(CN12)C1CCCCN1C3,Other alkaloid,False,0,False
+O=C1CCCCC1,Other,False,0,False
+O=C1CCCCCCCCCCC1,Terpenoid,False,0,False
+O=C1CCCCCCCCCCCCCC1,Terpenoid,False,0,False
+O=C1CCCCCCCCCCCCCCCO1,Terpenoid,False,0,False
+O=C1CCCCCCCCCCCCCCO1,Terpenoid,False,0,False
+O=C1CCCCCN1,Other,False,0,False
+O=C1CCCCCO1,Other,False,0,False
+O=C1CCCO1,Other,False,0,False
+O=C1CCc2ccccc2O1,Other aromatic,False,0,False
+O=C1Nc2ccccc2C1=O,Other aromatic,False,0,False
+O=C1OC(=O)C2C3CCC(O3)C12,Terpenoid,False,0,False
+O=C1OC(=O)C2CC=CCC12,Terpenoid,False,0,False
+O=C1OC(=O)c2ccccc21,Other aromatic,False,0,False
+O=C1OC(C(O)CO)C(O)=C1O,Terpenoid,False,0,False
+O=C1OCc2ccccc21,Other aromatic,False,0,False
+O=C1c2cccc(O)c2C(=O)c2c(O)cc(CO)cc21,Anthraquinone,False,0,False
+O=C1c2cccc(O)c2C(=O)c2c(O)cccc21,Anthraquinone,False,0,False
+O=C1c2ccccc2C(=O)c2c(O)c(O)cc(O)c21,Anthraquinone,False,0,False
+O=C1c2ccccc2C(=O)c2c(O)ccc(O)c21,Anthraquinone,False,0,False
+O=C1c2ccccc2C(=O)c2cc(O)ccc21,Anthraquinone,False,0,False
+O=C1c2ccccc2C(=O)c2ccccc21,Anthraquinone,False,0,False
+O=C=NC1CCCCC1,Other,False,0,False
+O=CC1CC=CCC1,Other,False,0,False
+O=CC=Cc1ccccc1,Other aromatic,False,0,False
+O=CC=O,Other,False,0,False
+O=CCCc1ccccc1,Other aromatic,False,0,False
+O=CN1CC2CC(C1)c1cccc(=O)n1C2,Other aromatic,False,0,False
+O=CN1CCCCC1,Other,False,0,False
+O=Cc1ccc(C(=O)O)cc1,Other aromatic,False,0,False
+O=Cc1ccc(CO)o1,Other aromatic,False,0,False
+O=Cc1ccc2c(c1)OCO2,Other aromatic,True,0,False
+O=Cc1ccccc1,Other aromatic,False,0,False
+O=Cc1ccccc1O,Other aromatic,False,0,False
+O=Cc1ccco1,Other aromatic,False,0,False
+O=N[O-],Other,False,0,False
+O=S(=O)([O-])[O-],Other,False,0,False
+O=S(=O)(c1ccc(Cl)cc1)c1ccc(Cl)cc1,Other aromatic,False,0,False
+O=S1OCC2C(CO1)C1(Cl)C(Cl)=C(Cl)C2(Cl)C1(Cl)Cl,Other,False,0,False
+O=[N+]([O-])CCO,Other,False,0,False
+O=[Si]=O,Other,False,0,False
+O=c1[nH]c2ccccc2o1,Other aromatic,False,0,False
+O=c1[nH]cnc2c1ncn2C1CC(O)C(CO)O1,Other alkaloid,False,0,False
+O=c1[nH]cnc2c1ncn2C1OC(CO)C(O)C1O,Other alkaloid,False,0,False
+O=c1[nH]cnc2ccccc12,Other aromatic,False,0,False
+O=c1[nH]cnc2nc[nH]c12,Other aromatic,False,0,False
+O=c1c(-c2ccc(O)cc2)coc2c(C3OC(CO)C(O)C(O)C3O)c(O)ccc12,Glycoside,False,0,True
+O=c1c(-c2ccc(O)cc2)coc2cc(O)ccc12,Flavonoid,False,0,False
+O=c1c(-c2ccccc2)c1-c1ccccc1,Other aromatic,False,0,False
+O=c1c(O)c(-c2ccc(O)c(O)c2)oc2c(O)c(O)cc(O)c12,Flavonoid,False,0,False
+O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)ccc12,Flavonoid,False,0,False
+O=c1c(O)c(-c2ccc(O)cc2)oc2cc(O)cc(O)c12,Flavonoid,False,0,False
+O=c1c(O)c(-c2ccc(O)cc2O)oc2cc(O)cc(O)c12,Flavonoid,False,0,False
+O=c1c(O)c(-c2ccccc2)oc2cc(O)cc(O)c12,Flavonoid,False,0,False
+O=c1cc(-c2cc(O)c(O)c(O)c2)oc2cc(O)cc(O)c12,Flavonoid,False,0,False
+O=c1cc(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12,Flavonoid,False,0,False
+O=c1cc(-c2ccc(O)c(O)c2)oc2cc(OC3OC(CO)C(O)C(O)C3O)cc(O)c12,Glycoside,False,0,True
+O=c1cc(-c2ccc(O)cc2)oc2cc(O)cc(O)c12,Flavonoid,False,0,False
+O=c1cc(-c2ccc(O)cc2)oc2cccc(O)c12,Flavonoid,False,0,False
+O=c1cc(-c2ccccc2)oc2ccccc12,Flavonoid,False,0,False
+O=c1cc(-c2ccccc2O)oc2cc(O)cc(O)c12,Flavonoid,False,0,False
+O=c1cc(CO)occ1O,Other aromatic,False,0,False
+O=c1cc[nH]c(=O)[nH]1,Other aromatic,False,0,False
+O=c1ccc2c(O)c3ccoc3cc2o1,Furanocoumarin,False,0,False
+O=c1ccc2cc(O)c(O)cc2o1,Coumarin,False,0,False
+O=c1ccc2cc(OC3OC(CO)C(O)C(O)C3O)c(O)cc2o1,Glycoside,False,0,True
+O=c1ccc2cc3ccoc3cc2o1,Furanocoumarin,False,0,False
+O=c1ccc2ccc(O)cc2o1,Coumarin,False,0,False
+O=c1ccc2ccccc2o1,Coumarin,False,0,False
+O=c1cccc2n1CC1CC2CN2CCCCC12,Other alkaloid,False,0,False
+O=c1cccccc1O,Other aromatic,False,0,False
+O=c1nc([O-])n(Cl)c(=O)n1Cl,Other aromatic,False,0,False
+O=c1oc2c(O)c(O)cc3c(=O)oc4c(O)c(O)cc1c4c23,Coumarin,False,0,False
+O=c1oc2cc(O)ccc2c2oc3cc(O)ccc3c12,Coumarin,False,0,False
+O=c1oc2ccccc2c(O)c1Cc1c(O)c2ccccc2oc1=O,Coumarin,False,0,False
+O=c1oc2ccccc2cc1O,Coumarin,False,0,False
+OC1C(O)C(O)C(O)C(O)C1O,Terpenoid,False,0,False
+OC1C=C2CCN3Cc4cc5c(cc4C(C1O)C23)OCO5,Isoquinoline alkaloid,True,0,False
+OC1CCCC1,Other,False,0,False
+OC1CCCCC1,Other,False,0,False
+OC1CCCCCCCCCCC1,Terpenoid,False,0,False
+OCC(O)C(O)C(O)C(O)C(O)CO,Acyclic aliphatic,False,0,False
+OCC(O)C(O)C(O)CO,Acyclic aliphatic,False,0,False
+OCC(O)c1ccccc1,Other aromatic,False,0,False
+OCC1CC=CCC1,Other,False,0,False
+OCC1CCCN2CCCCC12,Other alkaloid,False,0,False
+OCC=Cc1ccccc1,Other aromatic,False,0,False
+OCCCCCO,Other,False,0,False
+OCCCCO,Other,False,0,False
+OCCCO,Other,False,0,False
+OCCCc1ccccc1,Other aromatic,False,0,False
+OCCO,Other,False,0,False
+OCCOCCOCCOCCO,Acyclic aliphatic,False,0,False
+OCCc1ccc(O)cc1,Other aromatic,False,0,False
+OCCc1ccccc1,Other aromatic,False,0,False
+OCc1ccccc1,Other aromatic,False,0,False
+OCc1ccccc1O,Other aromatic,False,0,False
+OCc1cccnc1,Other aromatic,False,0,False
+Oc1cc(Cl)ccc1Oc1ccc(Cl)cc1Cl,Other aromatic,False,0,False
+Oc1cc(O)c2c(c1)OC(c1cc(O)c(O)c(O)c1)C(O)C2,Flavonoid,False,0,False
+Oc1cc(O)c2c(c1)OC(c1ccc(O)c(O)c1)C(O)C2,Flavonoid,False,0,False
+Oc1cc(O)cc(O)c1,Other aromatic,False,0,False
+Oc1ccc(Cl)cc1,Other aromatic,False,0,False
+Oc1ccc(O)c2c(O)cccc12,Other aromatic,False,0,False
+Oc1ccc(O)cc1,Other aromatic,False,0,False
+Oc1ccc2c(c1)CCC2,Other aromatic,False,0,False
+Oc1ccc2c(c1)OCO2,Other aromatic,True,0,False
+Oc1cccc(Cl)c1,Other aromatic,False,0,False
+Oc1cccc(O)c1,Other aromatic,False,0,False
+Oc1cccc2c(O)cccc12,Other aromatic,False,0,False
+Oc1cccc2ccccc12,Other aromatic,False,0,False
+Oc1ccccc1,Other aromatic,False,0,False
+Oc1ccccc1O,Other aromatic,False,0,False
+P,Other,False,0,False
+S=C=NCCc1ccccc1,Other aromatic,False,0,False
+S=C=NCc1ccccc1,Other aromatic,False,0,False
+S=C=Nc1ccccc1,Other aromatic,False,0,False
+S=c1[nH]c2ccccc2s1,Other aromatic,False,0,False
+SCc1ccccc1,Other aromatic,False,0,False
+[Ca+2],Other,False,0,False
+[Co],Other,False,0,False
+[Fe+3],Other,False,0,False
+[NH4+],Other,False,0,False
+[Zn+2],Other,False,0,False
+c1cc2c3c(cccc3c1)CC2,Other aromatic,False,0,False
+c1cc2ccc3cccc4ccc(c1)c2c34,Other aromatic,False,0,False
+c1cc[n+]2c(c1)-c1cccc[n+]1CC2,Other alkaloid,False,0,False
+c1cc[nH]c1,Other aromatic,False,0,False
+c1ccc(-c2ccccc2)cc1,Other aromatic,False,0,False
+c1ccc(C2CCCCC2)cc1,Other aromatic,False,0,False
+c1ccc(C2CO2)cc1,Other aromatic,False,0,False
+c1ccc(CCc2ccccc2)cc1,Other aromatic,False,0,False
+c1ccc(CSCc2ccccc2)cc1,Other aromatic,False,0,False
+c1ccc(Nc2ccc3ccccc3c2)cc1,Other aromatic,False,0,False
+c1ccc(Nc2cccc3ccccc23)cc1,Other aromatic,False,0,False
+c1ccc(Sc2ccccc2)cc1,Other aromatic,False,0,False
+c1ccc2c(c1)-c1cccc3cccc-2c13,Other aromatic,False,0,False
+c1ccc2c(c1)CCCC2,Other aromatic,False,0,False
+c1ccc2c(c1)CN1CCCC1=N2,Other aromatic,False,0,False
+c1ccc2c(c1)Cc1ccccc1-2,Other aromatic,False,0,False
+c1ccc2c(c1)ccc1c3ccccc3ccc21,Other aromatic,False,0,False
+c1ccc2c(c1)ccc1ccccc12,Other aromatic,False,0,False
+c1ccc2c(c1)oc1ccccc12,Other aromatic,False,0,False
+c1ccc2cc3ccccc3cc2c1,Other aromatic,False,0,False
+c1ccc2ccccc2c1,Other aromatic,False,0,False
+c1ccc2n[nH]nc2c1,Other aromatic,False,0,False
+c1ccc2occc2c1,Other aromatic,False,0,False
+c1ccc2scnc2c1,Other aromatic,False,0,False
+c1ccccc1,Other aromatic,False,0,False
+c1ccncc1,Other aromatic,False,0,False
+c1ccsc1,Other aromatic,False,0,False
+c1cncc(C2CCCCN2)c1,Other alkaloid,False,0,False
+c1csc(-c2ccc(-c3cccs3)s2)c1,Other aromatic,False,0,False

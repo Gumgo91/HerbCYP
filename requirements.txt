@@ -1,0 +1,8 @@
+# Analysis and figure scripts (CPU only); versions with which the tables of the paper were regenerated (Python 3.11)
+numpy==2.4.6
+pandas==3.0.6
+scipy==1.17.1
+scikit-learn==1.9.1
+rdkit==2026.3.6
+matplotlib==3.11.2
+pillow==12.3.0

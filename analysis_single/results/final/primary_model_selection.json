@@ -1,0 +1,18 @@
+{
+ "rule": "Primary model = the stand-alone model with the highest mean development AUROC, where the development AUROC is the mean of the AUROC in the Ambe set and in the non-herbal set (structures of at most 500 Da, mean over the five seeds of the raw probabilities).",
+ "selected": "Chemprop",
+ "expected_primary": "Chemprop",
+ "candidates": [
+  "Chemprop",
+  "MapLight",
+  "TabPFN-desc",
+  "RF"
+ ],
+ "development_sets": [
+  "ambe",
+  "nonherbal"
+ ],
+ "domain_da": 500.0,
+ "cohort_used": false,
+ "n_prediction_files": 40
+}

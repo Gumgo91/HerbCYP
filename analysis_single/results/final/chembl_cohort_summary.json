@@ -1,0 +1,10 @@
+{
+ "chembl_labeled_parents": 6084,
+ "overlap_herb": 4,
+ "overlap_ambe": 1,
+ "overlap_stress": 62,
+ "overlap_pool": 42,
+ "unmeasured_le500_with_chembl": 45,
+ "inhibitors": 24,
+ "non_inhibitors": 21
+}

@@ -1,0 +1,9 @@
+{
+ "note": "Record counts of the standardized TDC CYP3A4 library; the tables themselves (which hold labels) are not part of the package.",
+ "n_train_validation_records": 9861,
+ "n_test_records": 2467,
+ "n_records_in_library": 12328,
+ "n_train_validation_records_removed_for_parent_overlap": 119,
+ "n_train_validation_records_left": 9742,
+ "n_pool_structures": 9726
+}

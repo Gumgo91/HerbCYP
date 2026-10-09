@@ -1,0 +1,17 @@
+subset,n,aggregator,outcome,rho,p
+all mapped herbs,53,mean,water_100,0.21875503950975647,0.11555383359109542
+all mapped herbs,53,mean,methanol_100,0.027092404450895016,0.8472974438508839
+all mapped herbs,53,median,water_100,0.1361070795033059,0.33116058779543117
+all mapped herbs,53,median,methanol_100,0.10264473472020642,0.46454625247674974
+all mapped herbs,53,frac_high,water_100,0.2751931196424376,0.04611334226385898
+all mapped herbs,53,frac_high,methanol_100,0.10163955173661772,0.468954321379388
+all mapped herbs,53,top5_mean,water_100,0.3588130946621512,0.008329718138962482
+all mapped herbs,53,top5_mean,methanol_100,0.14046121593291405,0.31577695672626094
+herbs with at least 10 scored ingredients,49,mean,water_100,0.3189795918367347,0.025487844496965895
+herbs with at least 10 scored ingredients,49,mean,methanol_100,0.08183673469387753,0.5761564494135343
+herbs with at least 10 scored ingredients,49,median,water_100,0.19285714285714284,0.18429293183949358
+herbs with at least 10 scored ingredients,49,median,methanol_100,0.12591836734693876,0.38862534994254405
+herbs with at least 10 scored ingredients,49,frac_high,water_100,0.3314454823437763,0.019996707358798237
+herbs with at least 10 scored ingredients,49,frac_high,methanol_100,0.11648553512790047,0.42541161550535955
+herbs with at least 10 scored ingredients,49,top5_mean,water_100,0.34112244897959176,0.016455693965692145
+herbs with at least 10 scored ingredients,49,top5_mean,methanol_100,0.07897959183673468,0.5895909931500499
