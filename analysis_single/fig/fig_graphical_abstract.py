@@ -1,6 +1,6 @@
 """Graphical abstract (190 x 88 mm), drawn entirely by script: one panel with the flow Chemprop -> ranking of the 1,028 cohort ingredients -> result -> 15,511 ranked ingredients.
 
-No generative AI tool and no image editor is involved.  Every length is computed from the result files: the strip shows the positions of all 171 inhibitors
+Every length is computed from the result files: the strip shows the positions of all 171 inhibitors
 along the Chemprop ranking of the cohort, the two bars have lengths 1.47 : 6.01 and the tier bar has the shares of the ranked list.  The line under the two bars
 gives the yield of the top 10% within the eight heavy-atom strata of the size-stratified AUROC (70 inhibitors found against 39.3 expected at random in the
 same strata: 1.8 times random), because the cohort is mostly small ingredients and the 4.1-fold yield of the plain comparison is partly a size effect.  The

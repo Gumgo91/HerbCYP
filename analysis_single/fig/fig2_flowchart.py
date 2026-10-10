@@ -3,7 +3,7 @@
 Four columns joined by arrows: three source tables with their counts, the four models and two reference scores, the evaluation, and the outputs.
 The training pool leads into the frame of the models by an arrow labeled "fit"; the evaluation cohort and the unmeasured ingredients join in one arrow labeled
 "score" (the trained models score them; TabPFN on descriptors has no predictions for the unmeasured ingredients, which its box states).
-No generative AI tool and no image editor is involved: every box, line and word is a primitive of this script, and the counts of the three source tables
+Every box, line and word is a primitive of this script, and the counts of the three source tables
 are read from the input and result files (training pool, evaluation cohort, ranked list) when the figure is drawn.  Colors are those of the other figures
 (style_single.py): the strong blue of the primary model, one color per model, grey for the two reference scores, pale blue for the cohort and the outputs.
 

@@ -5,8 +5,7 @@ Run from ROOT/analysis_single/fig with the herbperturb interpreter (Fig. 6 and t
     set PYTHONIOENCODING=utf-8
     python run_figures.py   (an environment with RDKit, matplotlib, pandas and Pillow)
 
-All figures, including the flow chart of Fig. 2 (fig2_flowchart.py), are drawn by these scripts from the result files; no figure is made or altered with a
-generative AI tool or an image editor.  The checks (check_figures.py) run with the default Python (PyMuPDF).
+All figures, including the flow chart of Fig. 2 (fig2_flowchart.py), are drawn by these scripts from the result files.  The checks (check_figures.py) run with the default Python (PyMuPDF).
 """
 from __future__ import annotations
 
