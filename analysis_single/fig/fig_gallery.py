@@ -1,6 +1,6 @@
-"""Figure 6: the highest-ranked unmeasured ingredients (structures, Chemprop scores, natural-product likeness, herbs).  Needs RDKit (herbperturb environment).
+"""Figure 6: the highest-ranked unmeasured ingredients (structures, Chemprop scores, natural-product likeness, herbs).  Needs RDKit.
 
-Read from results/final/app/unmeasured_ranked.csv.gz of the single-model analysis; names, ranks, scores, tiers, similarity, natural-product likeness and herbs
+Read from results/final/app/unmeasured_ranked.csv.gz; names, ranks, scores, tiers, similarity, natural-product likeness and herbs
 come from the file.  The likeness score is printed for every panel so that a reader sees which top-ranked structures are not natural-product-like (score below 0;
 some HERB records may be annotation errors).
 Rows that HERB labels with a name that does not match the structure (column name_flag) are skipped.  Long names are wrapped over three lines
@@ -53,7 +53,7 @@ def display_name(raw: str) -> str:
     return raw[:1].upper() + raw[1:]
 
 
-# names as recorded in HERB (inputs of the second analysis) against the names of the ranked table, which have lost every character outside the ASCII set
+# names as recorded in HERB (arch_v4/bundle/unmeasured.csv) against the names of the ranked table, which have lost every character outside the ASCII set
 RECORDED = pd.read_csv(st.BUNDLE / "unmeasured.csv", usecols=["id", "name"]).set_index("id").name
 assert top.id.isin(RECORDED.index).all(), "a shown ingredient is not in the input table of the unmeasured ingredients"
 LOST = [int(r) for r, i in zip(top["rank"], top.id) if not str(RECORDED.loc[i]).isascii()]

@@ -1,10 +1,9 @@
 """Similarity of the evaluation structures to the training structures (annotation only; it never enters a score).
 
-maxsim = maximum Tanimoto similarity (Morgan radius 2, 2048 bits) of a structure to the union of the five training sets of the split of the second
-analysis (pool rows with role 'train' in at least one of role_s1 ... role_s5).  This equals the maximum over the five seeds of the per-seed maxima
-that the second analysis stored in arch_v4/cache; it is recomputed here from the bundle and cached in analysis_single/cache/maxsim_union.npz
+maxsim = maximum Tanimoto similarity (Morgan radius 2, 2048 bits) of a structure to the union of the five training sets of the split
+(pool rows with role 'train' in at least one of role_s1 ... role_s5), which equals the maximum over the five seeds of the per-seed maxima.
+It is computed from the bundle and cached in analysis_single/cache/maxsim_union.npz
 together with hashes of the pool (ids, SMILES, role columns) and of every set, and a cache that does not match the bundle is rebuilt.
-tests/test_pipeline.py compares the result with arch_v4/cache (read only).
 
 python code/similarity.py [--rebuild]
 """

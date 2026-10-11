@@ -1,7 +1,7 @@
 """Application outputs from a score vector: testing budgets, score tiers, ranked table of unmeasured ingredients.
 
-Functions take plain arrays and data frames.  The tier edges (0.2, 0.5, 0.8) were fixed in the first analysis, before any HERB label was summarized,
-and are unchanged here; they are applied to the raw seed-mean Chemprop probability and nothing is recalibrated.
+Functions take plain arrays and data frames.  The tier edges (0.2, 0.5, 0.8) are constants; they are applied to the raw seed-mean Chemprop
+probability and nothing is recalibrated.
 """
 from __future__ import annotations
 

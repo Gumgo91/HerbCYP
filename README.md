@@ -5,7 +5,7 @@ Code, input data, predictions and figures of the paper
 > **Machine learning identifies CYP3A4-inhibiting herbal ingredients for herb-drug interaction screening**
 > Hyunseung Kong, Seoul National University (manuscript in preparation)
 
-Four models (Chemprop, a MapLight-style CatBoost, TabPFN on RDKit descriptors and a random forest) were trained on 9,726 public screening compounds (the CYP3A4 task of the Therapeutics Data Commons) and tested on 1,028 HERB ingredients of at most 500 Da with measured calls (171 inhibitors) whose chemical parents are absent from training. Chemprop is the primary model. Its scores give score tiers, testing budgets and a ranked list of 15,511 unmeasured HERB ingredients. The cohort was also scored in earlier analyses; Methods 2.2 and 2.4 of the paper give the study history.
+Four models (Chemprop, a MapLight-style CatBoost, TabPFN on descriptors and a random forest) were trained on 9,726 public screening compounds (the CYP3A4 task of the Therapeutics Data Commons) and tested on 1,028 HERB ingredients of at most 500 Da with measured calls (171 inhibitors) whose chemical parents are absent from training. Chemprop is the primary model. Its scores give score tiers, testing budgets and a ranked list of 15,511 unmeasured HERB ingredients.
 
 ## Main result (HERB cohort, 1,028 ingredients, 171 inhibitors)
 

@@ -1,14 +1,12 @@
-"""Evaluation tables of the single-model analysis: HERB cohort, development sets and development table (summarizes the prediction files of the second analysis; nothing is tuned).
+"""Evaluation tables: HERB cohort, development sets and development table (summarizes the prediction files of the four models; nothing is tuned).
 
 python code/run_all.py [--out results/final] [--skip herb dev]
 
 Primary model: Chemprop (rule in select_primary.py, development data only).  Comparators: MapLight-style CatBoost (MapLight), TabPFN on descriptors
-(TabPFN-desc) and random forest (RF); reference scores: heavy-atom count (Size) and Crippen logP (LogP).  Scores are the means over the five seeds of the raw probabilities
-of the second analysis.  Same analyses, estimates and paired intervals as arch_v4/analysis/run_all.py with Chemprop as the primary model:
-the paired differences are Chemprop minus the comparator or reference score (2,000 scaffold-cluster draws, seed 2026, ring-free structures form one cluster).
+(TabPFN-desc) and random forest (RF); reference scores: heavy-atom count (Size) and Crippen logP (LogP).  Scores are the means over the five seeds of the raw probabilities.
+The paired differences are Chemprop minus the comparator or reference score (2,000 scaffold-cluster draws, seed 2026, ring-free structures form one cluster).
 Cohort labels enter only through the evaluation functions of stats_v3.py (estimates, intervals, stratified AUROC) and the recovery curves.
-Every score is the mean of the five seed models (an ensemble), so every AUROC is the AUROC of a five-seed mean; the seed-to-seed variation of single seeds is not summarized here
-(Supplement 3D of the manuscript quantifies it from the prediction files).
+Every score is the mean of the five seed models (an ensemble), so every AUROC is the AUROC of a five-seed mean; the seed-to-seed variation of single seeds is not summarized here.
 
 Writes estimates.csv, paired.csv, herb_recovery_curves.csv, herb_scores_all_models.csv and dev_single_models.csv.
 """
@@ -87,7 +85,7 @@ def main():
         pd.concat(est_all, ignore_index=True).to_csv(out / "estimates.csv", index=False)
         pd.concat(pair_all, ignore_index=True).to_csv(out / "paired.csv", index=False)
 
-    # ------------------------------------------------ development table (replaces the ablation table of the second analysis)
+    # ------------------------------------------------ development table
     if "dev" not in args.skip:
         t = dev_table(bundle)
         t.to_csv(out / "dev_single_models.csv", index=False)

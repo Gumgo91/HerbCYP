@@ -1,5 +1,5 @@
 {
- "_note": "numbers.json of the descriptive stage reduced to the entries that the figure script reads (HERB-universe and cohort counts); the other entries belong to earlier models and splits and are not part of this package",
+ "_note": "numbers.json reduced to the entries that the figure script reads (HERB-universe and cohort counts)",
  "n_cohort": 1036,
  "uni_n_universe": 23062,
  "uni_n_concordant": 1102,

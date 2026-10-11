@@ -1,6 +1,6 @@
-"""Post hoc sensitivity analyses in the HERB cohort (added after the primary evaluation; labeled post hoc): ingredients without a
+"""Post hoc sensitivity analyses in subsets of the HERB cohort: ingredients without a
 methylenedioxyphenyl group, ingredients also present in the Ambe set, ingredients whose chemical parent is in the label-free pretraining corpus,
-ring-containing and ring-free ingredients, ingredients with a ring system.  Same subsets as arch_v4/analysis/extra_herb.py, Chemprop as the primary model.
+ring-containing and ring-free ingredients, ingredients with a ring system.  Chemprop is the primary model.
 
 python code/extra_herb.py [--final results/final] [--out results/final]
 

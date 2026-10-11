@@ -1,11 +1,11 @@
-"""Regenerate every figure of the single-model analysis in manuscript/final_v5/figures.
+"""Regenerate every figure and the graphical abstract in the figure folder (FIGDIR of style_single.py).
 
-Run from ROOT/analysis_single/fig with the herbperturb interpreter (Fig. 6 and the graphical abstract need RDKit):
+Run from ROOT/analysis_single/fig (Fig. 6 and the graphical abstract need RDKit):
 
     set PYTHONIOENCODING=utf-8
     python run_figures.py   (an environment with RDKit, matplotlib, pandas and Pillow)
 
-All figures, including the flow chart of Fig. 2 (fig2_flowchart.py), are drawn by these scripts from the result files.  The checks (check_figures.py) run with the default Python (PyMuPDF).
+All figures, including the flow chart of Fig. 2 (fig2_flowchart.py), are drawn by these scripts from the result files.
 """
 from __future__ import annotations
 

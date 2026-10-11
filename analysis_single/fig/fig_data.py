@@ -1,14 +1,12 @@
 """Figure 1: data and coverage of the evidence (application domain of at most 500 Da).
 
 The panels show data facts (HERB universe, assay evidence, training pool, coverage by molecular weight, descriptor space).  They do not
-depend on the split or on the model.  Coverage counts are read from results/final/coverage_by_mw.csv of the single-model analysis (the
-model-independent columns equal those of the second analysis); cohort and pool counts are read from the bundle; HERB-universe counts
-are checked against analysis_v3/results/numbers.json.  Numbers are unchanged from the earlier figure and are re-read from the files here.
-Panel c plots the coordinates of analysis_v3/results/a5_embedding.csv (inputs/analysis_v3_results/a5_embedding.csv of the data package), which a script of the
-descriptive stage (a5_landscape.py, not part of the package) wrote once: a random sample of 4,000 training-pool structures and one of 7,000 unmeasured HERB structures
-(seed 2026) and all 1,036 measured HERB structures, each described by 200 normalized RDKit 2D descriptors (the structures without a complete descriptor vector were
-dropped: 3,983, 6,995 and 1,036 remain), standardized over these structures, clipped at +-6 SD, reduced to 40 principal components (seed 2026) and embedded by
-t-SNE (perplexity 60, PCA initialization, seed 2026).  README.txt of the data package gives the same description.
+depend on the split or on the model.  Coverage counts are read from results/final/coverage_by_mw.csv; cohort and pool counts are read from the
+bundle; HERB-universe counts are checked against analysis_v3/results/numbers.json.
+Panel c plots the coordinates of analysis_v3/results/a5_embedding.csv, a t-SNE embedding of a random sample of 4,000 training-pool structures, one of
+7,000 unmeasured HERB structures (seed 2026) and all 1,036 measured HERB structures, each described by 200 normalized RDKit 2D descriptors (the structures
+without a complete descriptor vector were dropped: 3,983, 6,995 and 1,036 remain), standardized over these structures, clipped at +-6 SD, reduced to 40
+principal components (seed 2026) and embedded by t-SNE (perplexity 60, PCA initialization, seed 2026).  The file is read as it is and is not recomputed here.
 """
 from __future__ import annotations
 
@@ -33,11 +31,11 @@ emb = pd.read_csv(st.V3RES / "a5_embedding.csv")             # t-SNE of pool and
 NUM = json.load(open(st.V3RES / "numbers.json", encoding="utf-8"))
 pool = pd.read_csv(st.BUNDLE / "pool.csv", usecols=["parent_inchikey"])
 _tdc_tables = ROOT / "data" / "processed" / "tdc_trainval_std.csv"
-if _tdc_tables.exists():                                     # project repository: counts from the standardized TDC tables
+if _tdc_tables.exists():                                     # standardized TDC tables present: counts from them
     _tv = pd.read_csv(_tdc_tables)
     N_TV, N_TE = len(_tv), len(pd.read_csv(ROOT / "data" / "processed" / "tdc_test_std.csv"))
     TDC_REMOVED = int((~_tv.parent_inchikey.isin(set(pool.parent_inchikey))).sum())
-else:                                                        # data package: record counts of the library (tdc_counts.json; the labeled tables are not shipped)
+else:                                                        # otherwise: record counts of the library (tdc_counts.json; the labeled tables are not shipped)
     _cnt = json.load(open(st.V3RES / "tdc_counts.json", encoding="utf-8"))
     N_TV, N_TE = _cnt["n_train_validation_records"], _cnt["n_test_records"]
     TDC_REMOVED = _cnt["n_train_validation_records_removed_for_parent_overlap"]
@@ -54,10 +52,10 @@ assert int(cov.n_universe.sum()) == NUM["uni_n_universe"] == 23062 and int(cov.n
 assert NUM["herb_herbs_with_structure"] == 7130 and NUM["uni_n_conflict"] == 90 and NUM["n_cohort"] == N_ALL == 1036
 assert (N_TV, N_TV + N_TE, TDC_REMOVED, POOL_REC, POOL_N) == (9861, 12328, 119, 9742, 9726)
 assert (N5, POS5) == (1028, 171)
-# reasons for the removal of the 119 train-validation records (checked against data/revision_v1 of the project repository: 113 share a chemical parent with
-# herb_evidence_reserved.csv, 4 more with the evaluation group E2a of the analysis of 24 September 2026 (eval_e2a.csv: 81 HERB ingredients with a TDC label), 2 more with training_label_conflicts.csv; none with an Ambe or non-herbal compound)
-REMOVED_HERB_EVIDENCE, REMOVED_EARLIER_GROUP, REMOVED_CONFLICT = 113, 4, 2
-assert REMOVED_HERB_EVIDENCE + REMOVED_EARLIER_GROUP + REMOVED_CONFLICT == TDC_REMOVED
+# reasons for the removal of the 119 train-validation records: 113 share a chemical parent with a HERB ingredient with eligible evidence, 4 more are identical to a HERB
+# ingredient without such evidence, 2 more have contradictory labels; none shares a chemical parent with an Ambe or non-herbal compound
+REMOVED_HERB_EVIDENCE, REMOVED_IDENTICAL, REMOVED_CONFLICT = 113, 4, 2
+assert REMOVED_HERB_EVIDENCE + REMOVED_IDENTICAL + REMOVED_CONFLICT == TDC_REMOVED
 
 
 def wilson(k, n, z=1.96):
@@ -116,8 +114,8 @@ ybot, bh2 = 1.0, 21                                    # bottom row: five-line b
 box(6, ybot, 34, bh2, ["TDC CYP3A4 library", f"{N_TV:,} train-validation", f"records ({N_TV + N_TE:,} in all)"], size=6.8)
 box(48, ybot, 80, bh2, [f"Training pool: {POOL_REC:,} records ({POOL_N:,} structures)", f"after removing {TDC_REMOVED} whose chemical parent matches",
                         f"a HERB ingredient with eligible evidence ({REMOVED_HERB_EVIDENCE}),",
-                        "a HERB ingredient evaluated in the analysis of",
-                        f"24 September 2026 ({REMOVED_EARLIER_GROUP}) or contradictory labels ({REMOVED_CONFLICT})"], bold_first=False, size=6.8)
+                        "a structure identical to a HERB ingredient without",
+                        f"evidence ({REMOVED_IDENTICAL}) or contradictory labels ({REMOVED_CONFLICT})"], bold_first=False, size=6.8)
 box(133.7, ybot, 55.3, bh2, ["Four models, five seeds", "Chemprop, MapLight-style CatBoost,", "TabPFN on descriptors,", "random forest"], size=6.8)
 arrow(40.5, ybot + bh2 / 2, 47.4, ybot + bh2 / 2)
 arrow(128.5, ybot + bh2 / 2, 133.1, ybot + bh2 / 2)

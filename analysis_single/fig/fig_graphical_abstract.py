@@ -4,7 +4,7 @@ Every length is computed from the result files: the strip shows the positions of
 along the Chemprop ranking of the cohort, the two bars have lengths 1.47 : 6.01 and the tier bar has the shares of the ranked list.  The line under the two bars
 gives the yield of the top 10% within the eight heavy-atom strata of the size-stratified AUROC (70 inhibitors found against 39.3 expected at random in the
 same strata: 1.8 times random), because the cohort is mostly small ingredients and the 4.1-fold yield of the plain comparison is partly a size effect.  The
-example structure is depicted by RDKit.  Needs RDKit (herbperturb environment).  Writes GraphicalAbstract.pdf, .eps, .png (300 dpi) and .tiff (600 dpi, LZW).
+example structure is depicted by RDKit.  Needs RDKit.  Writes GraphicalAbstract.pdf, .eps, .png (300 dpi) and .tiff (600 dpi, LZW).
 """
 from __future__ import annotations
 

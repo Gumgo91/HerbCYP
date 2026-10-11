@@ -1,7 +1,6 @@
-"""Ranking metrics and paired scaffold-cluster bootstrap used for the v3 manuscript.
+"""Ranking metrics and paired scaffold-cluster bootstrap.
 
-The resampling reuses herbcyp.statistics.cluster_indices (same seed, same draws as revision_v1), so every
-metric that already existed is reproduced exactly and the new baselines share the identical draws.
+The resampling uses herbcyp.statistics.cluster_indices, so all models and paired contrasts share the identical draws.
 Ties: descending score, then ascending canonical SMILES; labels never break ties.
 """
 from __future__ import annotations

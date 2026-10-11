@@ -1,11 +1,11 @@
-"""Shared helpers of the single-model analysis (Chemprop as the primary model).
+"""Shared helpers of the analysis scripts (Chemprop is the primary model).
 
-The analysis re-summarizes the prediction files of the second analysis (ROOT/arch_v4/results/<model>/seed{k}_{set}.csv.gz) for the four stand-alone
-models Chemprop, MapLight-style CatBoost, TabPFN on descriptors and the random forest, plus the two reference scores (heavy-atom count, Crippen
-logP).  Nothing is trained or tuned here, and nothing under ROOT/arch_v4, ROOT/arch_v5 or ROOT/analysis_v3 is written.
+The scripts summarize the prediction files ROOT/arch_v4/results/<model>/seed{k}_{set}.csv.gz of the four models Chemprop, MapLight-style CatBoost,
+TabPFN on descriptors and the random forest, plus the two reference scores (heavy-atom count, Crippen logP).  Nothing is trained or tuned here, and
+nothing under ROOT/arch_v4 or ROOT/analysis_v3 is written.
 
-Design (unchanged from the second analysis): cohort = HERB ingredients up to 500 Da, paired scaffold-cluster bootstrap with 2,000 draws (seed 2026,
-analysis_v3/stats_v3.py bootstrap_panel), scores = mean over the five seeds of the raw probabilities.
+Design: cohort = HERB ingredients up to 500 Da, paired scaffold-cluster bootstrap with 2,000 draws (seed 2026, analysis_v3/stats_v3.py
+bootstrap_panel), scores = mean over the five seeds of the raw probabilities.
 """
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ HERE = Path(__file__).resolve().parents[1]           # ROOT/analysis_single
 ROOT = HERE.parent                                   # ROOT = HerbCYP
 V4 = ROOT / "arch_v4"
 BUNDLE = V4 / "bundle"
-RESULTS = V4 / "results"                             # <model>/seed{k}_{set}.csv.gz of the second analysis (read only)
+RESULTS = V4 / "results"                             # <model>/seed{k}_{set}.csv.gz (read only)
 V3_RESULTS = ROOT / "analysis_v3" / "results"        # split-independent annotations (read only)
 CACHE = HERE / "cache"
 FINAL = HERE / "results" / "final"
@@ -39,7 +39,7 @@ from stats_v3 import bootstrap_panel  # noqa: E402  (ROOT/analysis_v3/stats_v3.p
 SEEDS = [1, 2, 3, 4, 5]
 DOMAIN = 500.0                                       # application domain (Da)
 PRIMARY = "Chemprop"
-# model label -> folder of the second analysis; the label is the column name in every table
+# model label -> prediction folder under arch_v4/results; the label is the column name in every table
 MODEL_DIR = {"Chemprop": "chemprop", "MapLight": "maplight_cb", "TabPFN-desc": "tabpfn_desc", "RF": "rf"}
 MODEL_NAME = {"Chemprop": "Chemprop", "MapLight": "MapLight-style CatBoost", "TabPFN-desc": "TabPFN on descriptors", "RF": "Random forest",
               "Size": "Heavy-atom count", "LogP": "Crippen logP"}
@@ -52,7 +52,7 @@ ALLOW_OLD_ENV = "HERBCYP_ALLOW_OLD_RESULTS"
 
 
 class StaleResultsError(RuntimeError):
-    """Prediction files older than the frozen split, or ids that do not match the frames of the current split."""
+    """Prediction files older than the pool of the split, or ids that do not match the frames of the current split."""
 
 
 # ------------------------------------------------------------------ bundle and predictions
@@ -66,23 +66,23 @@ def unmeasured_domain(df):
 
 
 def check_frozen_split(bundle_dir=BUNDLE):
-    """The pool must be the one whose hash is recorded in SPLIT_V2_MANIFEST.json of the second analysis."""
+    """The pool must be the one whose hash is recorded in SPLIT_V2_MANIFEST.json."""
     d = Path(bundle_dir)
     want = json.loads((d / "SPLIT_V2_MANIFEST.json").read_text(encoding="utf-8"))["pool_sha256"]
     got = hashlib.sha256((d / "pool.csv").read_bytes()).hexdigest()
     if got != want:
-        raise ValueError(f"{d / 'pool.csv'} (sha256 {got[:12]}) is not the frozen pool of SPLIT_V2_MANIFEST.json ({want[:12]})")
+        raise ValueError(f"{d / 'pool.csv'} (sha256 {got[:12]}) is not the pool of SPLIT_V2_MANIFEST.json ({want[:12]})")
     return d / "pool.csv"
 
 
 def check_fresh(files, bundle_dir=BUNDLE):
-    """Refuse prediction files older than the frozen pool (leftovers of the first analysis)."""
+    """Refuse prediction files that are older than the pool, because they were written for another split."""
     if os.environ.get(ALLOW_OLD_ENV) == "1":
         return
     t_ref = check_frozen_split(bundle_dir).stat().st_mtime
     old = [str(f) for f in files if Path(f).stat().st_mtime < t_ref]
     if old:
-        raise StaleResultsError(f"{len(old)} prediction files are older than the frozen pool, e.g. {old[:3]}")
+        raise StaleResultsError(f"{len(old)} prediction files are older than the pool, e.g. {old[:3]}")
 
 
 def read_pred(path, ids):
@@ -128,7 +128,7 @@ def required_files(include_herb=True):
 
 
 def verify_inputs(include_herb=True):
-    """Stop before any table is written if a file is missing, older than the frozen pool, or does not carry the ids of the current frames."""
+    """Stop before any table is written if a file is missing, older than the pool, or does not carry the ids of the current frames."""
     check_frozen_split()
     files = required_files(include_herb)
     missing = [str(f) for f in files if not f.exists()]
@@ -140,7 +140,7 @@ def verify_inputs(include_herb=True):
     for f in files:
         sset = f.name[:-len(".csv.gz")].split("_")[-1]
         read_pred(f, frames[sset].id.values)
-    print(f"inputs checked: {len(files)} prediction files present, newer than the frozen pool, with the ids of the current frames", flush=True)
+    print(f"inputs checked: {len(files)} prediction files present, newer than the pool, with the ids of the current frames", flush=True)
     return files
 
 
@@ -154,7 +154,7 @@ def file_sha256(p):
 
 # ------------------------------------------------------------------ evaluation frames
 def attach_scores(frame, sset, models=TRAINED, sim=None):
-    """Score columns (one per model), maxsim (if given), canonical_smiles, Size, LogP and size_bin, in the column order of the second analysis."""
+    """Score columns (one per model), maxsim (if given), canonical_smiles, Size, LogP and size_bin, in the column order of the score tables."""
     f = frame.copy()
     for lab in ("Chemprop", "RF"):
         if lab in models:

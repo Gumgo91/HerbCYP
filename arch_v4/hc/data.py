@@ -1,4 +1,4 @@
-"""Bundle access and the frozen scaffold splits."""
+"""Bundle access and the scaffold splits."""
 from __future__ import annotations
 
 from pathlib import Path

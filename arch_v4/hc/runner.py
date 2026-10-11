@@ -1,4 +1,4 @@
-"""Run one expert over the five frozen seeds and write long-format predictions.
+"""Run one expert over the five seeds and write long-format predictions.
 
 An expert object needs: name, fit(bundle, store, tr, sel, seed) and predict(store, frame) -> probabilities.
 """
@@ -29,7 +29,7 @@ def run_expert(expert, bundle, store, out_dir, seeds=SEEDS, sets=SETS, log=print
         for name in todo:
             p = np.asarray(expert.predict(store, frames[name], name), dtype=float)
             pd.DataFrame({"id": frames[name].id.values, "p": p}).to_csv(out_dir / f"seed{seed}_{name}.csv.gz", index=False)
-            # the HERB cohort is scored and saved but never summarized during development (see PROTOCOL_ARCH.md)
+            # the HERB cohort is scored and saved here; the log line below summarizes the other labeled sets
             if name != "herb" and ("label" in frames[name] or name == "calibration"):
                 y = frames[name].label.values if "label" in frames[name] else frames[name].y.values
                 m = summarize(y, p)

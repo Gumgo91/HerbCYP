@@ -1,8 +1,8 @@
-"""Shared style of the figure scripts of the single-model analysis (Chemprop is the primary model).
+"""Shared style of the figure scripts (Chemprop is the primary model).
 
 Every figure script reads the result tables in ROOT/analysis_single/results/final (and, for the data figure, the split-independent tables of
-the bundle) and writes to ROOT/manuscript/final_v5/figures: PDF, EPS, PNG (300 dpi) and TIFF (600 dpi, LZW, 190 mm wide).  Nothing under
-ROOT/arch_v4, ROOT/analysis_v3 or ROOT/data is written.  Run with the interpreter of the herbperturb environment (Fig. 6 needs RDKit):
+the bundle) and writes to the figure folder FIGDIR: PDF, EPS, PNG (300 dpi) and TIFF (600 dpi, LZW, 190 mm wide).  Nothing under
+ROOT/arch_v4, ROOT/analysis_v3 or ROOT/data is written.  Fig. 6 needs RDKit:
 
     python run_figures.py   (an environment with RDKit, matplotlib, pandas and Pillow)
 
@@ -30,7 +30,7 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]                                   # ROOT = HerbCYP
 FINAL = ROOT / "analysis_single" / "results" / "final"
 APP = FINAL / "app"
-BUNDLE = ROOT / "arch_v4" / "bundle"                     # inputs of the second analysis (read only)
+BUNDLE = ROOT / "arch_v4" / "bundle"                     # input tables (read only)
 V3RES = ROOT / "analysis_v3" / "results"                 # split-independent annotation tables (read only)
 FIGDIR = ROOT / "figures"
 FIGDIR.mkdir(parents=True, exist_ok=True)

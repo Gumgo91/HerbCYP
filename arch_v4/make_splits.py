@@ -1,15 +1,14 @@
-"""Corrected scaffold splits of the training pool (second analysis, see PROTOCOL_REDO_SPLIT.md).
+"""Scaffold splits of the training pool.
 
-The first analysis used a deterministic largest-group-first split, which put all 264 ring-free structures into the selection subset in every
-seed and the largest groups into the same subset in every seed. The corrected split
+The split
 
   * forms groups = connected components of structures that share a stereo-free Murcko scaffold or a chemical parent; ring-free structures
     (empty scaffold) are grouped by Butina clustering on Morgan fingerprints (radius 2, 2,048 bits, Tanimoto similarity >= 0.5) and parents,
-    so that they are no longer a single group;
-  * assigns groups to training / selection / calibration (70 / 15 / 15 %) at random, one random generator per seed, choosing among 5,000 random
-    assignments the one whose subset sizes are closest to the targets (label-free criterion).
+    so that they do not form a single group;
+  * assigns groups to training / selection / calibration (70 / 15 / 15 %) at random, one random generator per seed, taking the first of at most 5,000
+    random assignments whose subset sizes are within one structure of the targets, or the closest one if there is none (label-free criterion).
 
-The group id of every structure is stored in the column gid (used for the grouped cross-validation of the gate).
+The group id of every structure is stored in the column gid.
 
 Usage: python make_splits.py            writes bundle/pool.csv (role_s1..role_s5) and bundle/SPLIT_V2_MANIFEST.json
        python make_splits.py --dry-run  prints the quality report only
@@ -131,7 +130,7 @@ def main():
                                 prevalence=round(float(pool.y[r == role].mean()), 3), gt500=int(((r == role) & (pool.mw > 500)).sum())) for role in ROLES}
     print(json.dumps(rep, indent=1))
     same = pool_new[[f"role_s{s}" for s in range(1, 6)]].nunique(axis=1).eq(1)
-    print("same role in all five seeds:", int(same.sum()), f"({100 * same.mean():.1f}%)", "(first analysis: 2,873, 29.5%)")
+    print("same role in all five seeds:", int(same.sum()), f"({100 * same.mean():.1f}%)")
     # disjointness checks
     for seed in range(1, 6):
         r = pool_new[f"role_s{seed}"]

@@ -2,16 +2,16 @@
 
 python code/app_final.py [--out results/final/app]
 
-Score = mean over the five seeds of the raw Chemprop probability.  The tier edges (0.2, 0.5, 0.8) are fixed (app_outputs.py); the HERB cohort (at most
-500 Da) is used only for the observed inhibitor rate per tier and the budget table, as in the second analysis.  The ranked list contains the
+Score = mean over the five seeds of the raw Chemprop probability.  The tier edges (0.2, 0.5, 0.8) are fixed constants (app_outputs.py); the HERB cohort
+(at most 500 Da) is used only for the observed inhibitor rate per tier and the budget table.  The ranked list contains the
 ingredients of at most 500 Da that have no concordant measurement and no chemical parent in the training pool (15,511 after 109 are set aside as
-in-sample).  Two columns are new relative to the second analysis' ranked table: parent_in_evaluation_sets (the ingredient shares a chemical parent
-with an ingredient of the evaluation cohort or of the Ambe set) and the score is the Chemprop probability.  The similarity (maxsim_train) and the
+in-sample).  The column parent_in_evaluation_sets marks the ingredients that share a chemical parent with an ingredient of the evaluation cohort or of
+the Ambe set, and the score is the Chemprop probability.  The similarity (maxsim_train) and the
 applicability class are recomputed from the training rows (union of the five training sets, similarity.py).  From analysis_v3/results only the
 split-independent annotations are read (chemotype, methylenedioxyphenyl, sugar, methoxy count; herb names).
 The column name of the ranked table is the HERB name with every character outside the printable ASCII range removed (clean_name): 977 of the 15,511 names lose
-characters (Greek letters, plus-minus signs, primes), so a name must not be used to identify a compound; arch_v4/bundle/unmeasured.csv (inputs/unmeasured.csv of the
-data package) holds the names as recorded in HERB, and make_data_package.py states the count in README.txt after computing it.
+characters (Greek letters, plus-minus signs, primes), so a name must not be used to identify a compound; arch_v4/bundle/unmeasured.csv holds the names as
+recorded in HERB.
 """
 from __future__ import annotations
 
@@ -129,7 +129,7 @@ def main():
         unm[c] = ann.reindex(unm.smiles)[c].values
     assert unm.maxsim_train.notna().all() and unm.chemotype.notna().all()
     unm["name"] = unm.name.map(clean_name)
-    # HERB entries whose name and structure disagree (found while inspecting the top of the ranked list in the first analysis)
+    # HERB entries whose name and structure disagree (found while inspecting the top of the ranked list)
     unm["name_flag"] = unm["name"].str.lower().isin(["acetic acid", "8-hydroxyluteolin-8--d-glucopranoside"]).map(
         {True: "name does not match structure", False: ""})
     unm["n_herbs"] = unm.linked_herbs.fillna("").map(lambda s: len([h for h in str(s).split("|") if h]))

@@ -9,7 +9,7 @@ are read from the input and result files (training pool, evaluation cohort, rank
 
 The drawing uses a 1600-unit canvas for 190 mm (one unit = 0.119 mm = 0.34 pt): box text 24 units (8.1 pt), column headings 30 units (10.1 pt), captions
 22 units (7.4 pt), the second caption of the primary model 21 units (7.1 pt).  Text is measured with the renderer and must stay at least 16 units inside its box.
-Writes Fig2.pdf, Fig2.eps (vector), Fig2.png (300 dpi) and Fig2.tiff (600 dpi, LZW) in manuscript/final_v5/figures through style_single.save().
+Writes Fig2.pdf, Fig2.eps (vector), Fig2.png (300 dpi) and Fig2.tiff (600 dpi, LZW) in the figure folder through style_single.save().
 """
 from __future__ import annotations
 
@@ -34,7 +34,7 @@ N_COH, N_POS = int(_a.n), int(_a.n_pos)                                         
 N_POOL = len(pd.read_csv(st.BUNDLE / "pool.csv", usecols=["parent_inchikey"]))   # training pool
 N_RANK = len(pd.read_csv(st.APP / "unmeasured_ranked.csv.gz", usecols=["rank"]))  # ranked unmeasured ingredients
 assert (N_POOL, N_COH, N_POS, N_RANK) == (9726, 1028, 171, 15511), "a count of the source tables differs from the manuscript"
-_pred = st.ROOT / "arch_v4" / "results"                                          # prediction files of the four models (the data package restores this layout with setup_layout.py)
+_pred = st.ROOT / "arch_v4" / "results"                                          # prediction files of the four models
 assert not list((_pred / "tabpfn_desc").glob("seed*_unmeasured.csv.gz")) and all(len(list((_pred / d).glob("seed*_unmeasured.csv.gz"))) == 5 for d in ("chemprop", "maplight_cb", "rf")), \
     "TabPFN on descriptors scores the unmeasured ingredients, or another model does not: revise the box text of the TabPFN row and the legend of Fig. 2"
 

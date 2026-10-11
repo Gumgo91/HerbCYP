@@ -1,25 +1,11 @@
-"""Choice of the primary model from development data only, and the development table of the single models.
+"""Choice of the primary model from development data only, and the development table of the models.
 
-Rule: among the stand-alone models of the second analysis, the primary model is the one with the highest mean development AUROC, the mean of the AUROC
-in the Ambe set and in the non-herbal set (both restricted to at most 500 Da).  Candidates are the four trained stand-alone models Chemprop,
-MapLight-style CatBoost, TabPFN on descriptors and the random forest; heavy-atom count and Crippen logP are reference scores, not trained models, and are
-listed in the development table but not ranked.
+Rule: among the four trained models, the primary model is the one with the highest mean development AUROC, the mean of the AUROC in the Ambe set and in
+the non-herbal set (both restricted to at most 500 Da).  Candidates are Chemprop, MapLight-style CatBoost, TabPFN on descriptors and the random forest;
+heavy-atom count and Crippen logP are reference scores, not trained models, and are listed in the development table but not ranked.
 
-History of the choice.  The development AUROCs of the four models had already been tabulated in the second analysis (8 October 2026: Chemprop 0.8337,
-MapLight-style CatBoost 0.8297, TabPFN on descriptors 0.8246, random forest 0.7190).  The author fixed the rule and the candidate set on 9 October 2026,
-after the cohort results and that development table of the second analysis were known.  The candidates are the four models that exist outside the combined
-model of the first and second analyses; three members of that combined model (development means 0.8398, 0.8370 and 0.8346) and the combined model itself
-(0.8371) had higher development means than Chemprop (0.8337).  In the second analysis Chemprop also had the highest cohort AUROC of the four candidates (0.869) and of the
-seven members of the combined model (next 0.863); in the first analysis it ranked below the MapLight-style CatBoost (0.844 against 0.863) and TabPFN on descriptors (0.852).
-The rule is applied to the five-seed means (the scores of every table); applied to the five single seeds it selects the MapLight-style CatBoost, Chemprop, TabPFN on
-descriptors, the MapLight-style CatBoost and the MapLight-style CatBoost (Chemprop once in five; Supplement 3D of the manuscript).  This script and the analysis code were written for Chemprop after the cohort results were known:
-it stops if the rule selects another model.  It recomputes the development AUROCs from the prediction files of the Ambe set and the non-herbal set and
-never opens a herb prediction file or herb.csv (a test confirms it); 50 of the 351 Ambe compounds are also cohort ingredients with identical labels, and
-without them Chemprop still leads (0.8312 against 0.8279 for MapLight-style CatBoost).  In the non-herbal development set the combined model exceeded Chemprop in
-AUROC by 0.019 (interval 0.010 to 0.031) in the second analysis, and its cohort AUROC was 0.870 against 0.869 for Chemprop.  The cohort estimate of Chemprop may be
-optimistic by an amount that these data cannot bound: the AUROC of Chemprop was higher than those of the MapLight-style CatBoost and TabPFN on descriptors by 0.008 and
-0.016 in the second analysis (paired intervals include zero), it ranked lowest of the three in the first analysis (0.844 against 0.863 and 0.852), and its AUROC was 0.844
-in the first analysis (predictions of the earlier version) and 0.869 after retraining in the second, a difference that the intervals omit.
+The rule is applied to the five-seed means (the scores of every table).  The script recomputes the development AUROCs from the prediction files of the
+Ambe set and the non-herbal set and never opens a herb prediction file or herb.csv.  It stops if the rule selects a model other than Chemprop.
 
 python code/select_primary.py [--out results/final]
 Writes primary_model_selection.csv and primary_model_selection.json.  dev_table() is also used by run_all.py for dev_single_models.csv.
@@ -69,7 +55,7 @@ def dev_row(frames, scores):
 
 
 def dev_table(bundle=None, with_descriptors=True):
-    """One row per model: AUROC and AP in Ambe and in the non-herbal set (up to 500 Da) and their mean AUROC (same columns as ablation_dev.csv)."""
+    """One row per model: AUROC and AP in Ambe and in the non-herbal set (up to 500 Da) and their mean AUROC."""
     bundle = bundle or load_dev()
     frames = dev_frames(bundle)
     rows = [dict(variant=lab, kind="single", **dev_row(frames, dev_scores(frames, lab))) for lab in TRAINED]

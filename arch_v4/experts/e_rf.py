@@ -1,8 +1,8 @@
-"""Random forest comparator of the first analysis (scripts/revision_train.py: train_rf, predict_rf, Features.fp), ported unchanged.
+"""Random forest model for the expert interface of arch_v4.
 
 500 trees, n_jobs=-1, random_state=seed, scikit-learn defaults otherwise, on 2,048-bit Morgan bit vectors of radius 2.
-Fitted on the training rows only; the selection rows are not used by this model (as in the first analysis).
-The output is the raw predict_proba of the positive class (the first analysis averaged the raw scores of the five seeds).
+Fitted on the training rows only; the selection rows are not used by this model.
+The output is the raw predict_proba of the positive class.
 """
 from __future__ import annotations
 

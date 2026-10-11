@@ -1,6 +1,6 @@
-"""Figure 4: AUROC in strata of the cohort and in the development sets, selection of the primary model, and post hoc subsets of the cohort.
+"""Figure 4: AUROC in strata of the cohort and in the development sets, selection of the primary model, and subsets of the cohort.
 
-All values are read from results/final of the single-model analysis (estimates.csv, dev_single_models.csv / primary_model_selection.csv,
+All values are read from results/final (estimates.csv, dev_single_models.csv / primary_model_selection.csv,
 paired_extra.csv, estimates_extra.csv).  One color per model as in every figure (Chemprop, the primary model, has the strong blue).
 """
 from __future__ import annotations

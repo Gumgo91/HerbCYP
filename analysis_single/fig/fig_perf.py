@@ -1,6 +1,6 @@
 """Figure 3: ranking performance of Chemprop (primary model) and the other models in the HERB evaluation cohort (at most 500 Da).
 
-Everything is read from results/final of the single-model analysis (estimates.csv, paired.csv, herb_recovery_curves.csv); axis limits follow the data.
+Everything is read from results/final (estimates.csv, paired.csv, herb_recovery_curves.csv); axis limits follow the data.
 Panels: (a) recovery curves, (b) AUROC and average precision with 95% scaffold-cluster intervals, (c) paired differences Chemprop minus each comparator.
 """
 from __future__ import annotations

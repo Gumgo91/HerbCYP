@@ -1,4 +1,4 @@
-"""Command line entry: python run_expert.py --expert ftt --bundle bundle --cache cache/feats.npz --out results [--seeds 1 2] [--limit N]
+"""Command line entry: python run_expert.py --expert chemprop --bundle bundle --cache cache/feats.npz --out results [--seeds 1 2] [--limit N]
 
 --limit N trains on the first N training rows and scores only the first N rows of each evaluation set (smoke tests).
 """
@@ -20,7 +20,7 @@ from hc.data import SEEDS, SETS, load_bundle  # noqa: E402
 from hc.feats import build_store  # noqa: E402
 from hc.runner import run_expert  # noqa: E402
 
-# Package copy: the registry lists the four stand-alone models of the single-model analysis; the rest of the file equals arch_v4/run_expert.py.
+# The registry lists the four models of the paper.
 REGISTRY = {
     "maplight_cb": ("experts.e_catboost", "MapLightCB", {}),
     "tabpfn_desc": ("experts.e_tabpfn", "TabPFNDesc", {}),
@@ -42,9 +42,9 @@ def main():
     a = ap.parse_args()
     manifest = Path(a.bundle) / "SPLIT_V2_MANIFEST.json"
     if not manifest.exists():
-        raise SystemExit("bundle/SPLIT_V2_MANIFEST.json is missing: refusing to train on an unfrozen split")
+        raise SystemExit("bundle/SPLIT_V2_MANIFEST.json is missing: refusing to train without the split manifest")
     if hashlib.sha256((Path(a.bundle) / "pool.csv").read_bytes()).hexdigest() != json.loads(manifest.read_text(encoding="utf-8"))["pool_sha256"]:
-        raise SystemExit("bundle/pool.csv differs from the frozen split of SPLIT_V2_MANIFEST.json")
+        raise SystemExit("bundle/pool.csv differs from the split of SPLIT_V2_MANIFEST.json")
     bundle = load_bundle(a.bundle)
     if a.limit:
         pool = bundle["pool"]

@@ -1,6 +1,6 @@
 """Figure 5: what a laboratory can do with the Chemprop scores (score tiers, testing budgets, overview of the ranked list of unmeasured ingredients).
 
-Read from results/final/app of the single-model analysis (herb_tiers, herb_budget, unmeasured_tier_by_mw, unmeasured_tier_by_chemotype,
+Read from results/final/app (herb_tiers, herb_budget, unmeasured_tier_by_mw, unmeasured_tier_by_chemotype,
 unmeasured_tier_by_similarity).  Tiers apply to the Chemprop probability (edges 0.2, 0.5, 0.8)."""
 from __future__ import annotations
 
@@ -75,7 +75,7 @@ ax_b.set_ylim(0, bud.found.max() * 1.30)
 ax_b.grid(axis="y", lw=0.3, color=st.GRID, zorder=0)
 ax_b.legend(loc="upper left", frameon=False, fontsize=6.2, handlelength=1.2, borderaxespad=0.0)
 b10 = bud[np.isclose(bud.budget, 0.10)].iloc[0]
-SM = st.size_matched_yield()                      # the cohort is mostly small ingredients: yield of the top 10% within the eight heavy-atom strata (decision R14)
+SM = st.size_matched_yield()                      # the cohort is mostly small ingredients: yield of the top 10% within the eight heavy-atom strata
 ax_b.text(0.02, 0.78, f"At 10%: {b10.assays_per_inhibitor:.1f} assays per inhibitor\n(random order: {b10.random_assays_per_inhibitor:.1f})\n"
                       f"{SM['enr_ha']:.1f} times random yield within\nheavy-atom strata", transform=ax_b.transAxes,
           fontsize=6.2, color="#444444", ha="left", va="top", linespacing=1.15)

@@ -1,11 +1,10 @@
-"""Chemprop comparator of the first analysis (scripts/revision_train.py: train_cp, new_mpnn, seed_model, scale_descriptors,
-molecule_dataset, cp_predict, Features.desc), ported to the arch_v4 expert interface. Configuration: runs/revision_v1/MODEL_CONFIG.json.
+"""Chemprop model for the expert interface of arch_v4.
 
 Chemprop 2.3.1 D-MPNN (BondMessagePassing depth 3, hidden 300, MeanAggregation, batch norm), 200 normalized RDKit descriptors
 (chemprop registry v1_rdkit_2d_normalized, train-only StandardScaler, missing values -> 0) concatenated before a 2-layer FFN
 (hidden 300, BinaryClassificationFFN), BCE, Adam with warm-up 2 epochs (1e-4 -> 1e-3 -> 1e-4), batch size 64, 50 epochs without
 early stopping. The checkpoint with the lowest selection loss (val_loss, earliest epoch on ties) is used. The output is the raw
-probability of the selected model (the first analysis averaged the raw scores of the five seeds).
+probability of the selected model.
 
 HERBCYP_CHEMPROP_EPOCHS overrides the number of epochs for smoke tests only. The default is 50 and must stay 50 for the analysis;
 the override changes the learning-rate schedule (cool-down is defined over max_epochs) and is recorded in seed{k}_selection.json.
@@ -20,7 +19,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-os.environ.setdefault("CUBLAS_WORKSPACE_CONFIG", ":4096:8")   # before the first CUDA call, as in the first analysis
+os.environ.setdefault("CUBLAS_WORKSPACE_CONFIG", ":4096:8")   # before the first CUDA call
 
 import numpy as np
 from rdkit import Chem, RDLogger
@@ -29,7 +28,7 @@ from sklearn.preprocessing import StandardScaler
 RDLogger.DisableLog("rdApp.*")
 
 EPOCHS = 50
-GRAPH_CACHE = True      # runtime-only featurization cache of the E2 stage of the first analysis (equality audited there)
+GRAPH_CACHE = True      # runtime-only featurization cache
 DESC_DIM = 200
 _FG = []                # one featurizer instance per process
 
@@ -54,7 +53,7 @@ def _desc_worker(smiles):
     return rdkit_2d_normalized(smiles)
 
 
-# --- model construction and determinism (revision_train.py, unchanged) ---
+# --- model construction and determinism ---
 def seed_model(seed):
     """Seed every RNG BEFORE graph/predictor/module initialization."""
     from lightning import pytorch as pl
@@ -94,7 +93,7 @@ def molecule_dataset(smiles, descriptors, labels=None, cache=GRAPH_CACHE):
 
 
 def scale_descriptors(scaler, descriptors):
-    """Missing descriptor -> train mean; equivalent to zero after standardization (revision_train.py, unchanged)."""
+    """Missing descriptor -> train mean; equivalent to zero after standardization."""
     transformed = scaler.transform(descriptors).astype(np.float32)
     if np.isinf(transformed).any():
         raise ValueError("Infinite transformed descriptor")
